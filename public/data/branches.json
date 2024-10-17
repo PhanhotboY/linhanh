@@ -1,0 +1,90 @@
+[
+  {
+    "label": "Hà Nội",
+    "value": "ha-noi",
+    "addresses": [
+      {
+        "isHighlight": true,
+        "address": "54B Nguyễn Văn Trỗi",
+        "district": "Phố Đỗ Quang, Cầu Giấy",
+        "map": "https://goo.gl/maps/1",
+        "image": "/images/locations/nguyen-van-troi.png"
+      },
+      {
+        "isHighlight": true,
+        "address": "54B Nguyễn Văn Trỗi",
+        "district": "Phố Đỗ Quang, Cầu Giấy",
+        "map": "https://goo.gl/maps/1",
+        "image": "/images/locations/nguyen-van-troi.png"
+      },
+      {
+        "address": "54B Nguyễn Văn Trỗi",
+        "district": "Phố Đỗ Quang, Cầu Giấy",
+        "map": "https://goo.gl/maps/1",
+        "image": "/images/locations/nguyen-van-troi.png"
+      }
+    ]
+  },
+  {
+    "label": "Hồ Chí Minh",
+    "value": "ho-chi-minh",
+    "addresses": [
+      {
+        "isHighlight": true,
+        "address": "54B Nguyễn Văn Trỗi",
+        "district": "Phố Đỗ Quang, Cầu Giấy",
+        "map": "https://maps.app.goo.gl/euZRUndzgoRwux6y5",
+        "image": "/images/locations/nguyen-van-troi.png"
+      },
+      {
+        "isHighlight": true,
+        "address": "398 - 400A Lê Hồng Phong",
+        "district": "P.1 Q.10",
+        "map": "https://maps.app.goo.gl/euZRUndzgoRwux6y5",
+        "image": "/images/locations/le-hong-phong.png"
+      },
+      {
+        "address": "672A18 Phan Văn Trị",
+        "district": "P.10 Q.Gò Vấp",
+        "map": "https://maps.app.goo.gl/euZRUndzgoRwux6y5",
+        "image": "/images/locations/phan-van-tri.png"
+      },
+      {
+        "address": "189 Đặng Văn Bi",
+        "district": "P.Trường Thọ Q.Thủ Đức",
+        "map": "https://goo.gl/maps/4",
+        "image": "/images/locations/dang-van-bi.png"
+      },
+      {
+        "address": "515 Nguyễn Thị Thập",
+        "district": "P.Tân Phú Q.7",
+        "map": "https://goo.gl/maps/5",
+        "image": "/images/locations/nguyen-thi-thap.png"
+      }
+    ]
+  },
+  {
+    "label": "Đà Nẵng",
+    "value": "da-nang",
+    "addresses": [
+      {
+        "address": "54B Nguyễn Văn Trỗi",
+        "district": "Phố Đỗ Quang, Cầu Giấy",
+        "map": "https://goo.gl/maps/1",
+        "image": "/images/locations/nguyen-van-troi.png"
+      },
+      {
+        "address": "54B Nguyễn Văn Trỗi",
+        "district": "Phố Đỗ Quang, Cầu Giấy",
+        "map": "https://goo.gl/maps/1",
+        "image": "/images/locations/nguyen-van-troi.png"
+      },
+      {
+        "address": "54B Nguyễn Văn Trỗi",
+        "district": "Phố Đỗ Quang, Cầu Giấy",
+        "map": "https://goo.gl/maps/1",
+        "image": "/images/locations/nguyen-van-troi.png"
+      }
+    ]
+  }
+]

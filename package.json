@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "remix vite:build",
-    "dev": "remix vite:dev",
+    "dev": "remix vite:dev --host",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "remix-serve ./build/server/index.js",
     "typecheck": "tsc"
@@ -14,12 +14,27 @@
     "@remix-run/node": "^2.12.1",
     "@remix-run/react": "^2.12.1",
     "@remix-run/serve": "^2.12.1",
+    "@remixicon/react": "^4.2.0",
+    "@resvg/resvg-js": "^2.6.2",
+    "@sanity/client": "^6.22.1",
+    "@sanity/react-loader": "^1.10.7",
+    "@sanity/ui": "^2.8.9",
+    "@sanity/vision": "^3.60.0",
+    "@unpic/react": "^0.1.14",
     "isbot": "^4.1.0",
+    "lodash": "^4.17.21",
+    "lucide-react": "^0.447.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "remix-utils": "^7.7.0",
+    "sanity": "^3.59.1",
+    "satori": "^0.11.2",
+    "survey-react-ui": "^1.12.5"
   },
   "devDependencies": {
     "@remix-run/dev": "^2.12.1",
+    "@types/jquery": "^3.5.31",
+    "@types/lodash": "^4.17.9",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.7.4",

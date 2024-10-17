@@ -1,0 +1,202 @@
+[
+  {
+    "banner": "/images/promotions/dieu-tri-da.png",
+    "isHot": true,
+    "tab": "tab_dieu-tri-da",
+    "details": {
+      "alt": "Khuyến mãi Điều trị da",
+      "content": [
+        {
+          "title": "CẤY COLLAGEN TƯƠI",
+          "description": ["Giảm 30% cho lần đầu tiên"]
+        },
+        {
+          "title": "NÂNG MŨI",
+          "description": [
+            "Ưu đãi 65% khi đăng ký liệu trình",
+            "Tặng Voucher 1.000.000VNĐ"
+          ]
+        },
+        {
+          "title": "TRẺ HÓA DA",
+          "description": ["Giảm 30% cho lần đầu tiên"]
+        }
+      ],
+      "images": [
+        "/images/promotions/km-dieu-tri-da-1.png",
+        "/images/promotions/km-dieu-tri-da-2.png",
+        "/images/promotions/km-dieu-tri-da-3.png"
+      ]
+    }
+  },
+  {
+    "banner": "/images/promotions/phun-xam-dieu-khac.png",
+    "isHot": true,
+    "tab": "tab_phun-xam-dieu-khac",
+    "details": {
+      "alt": "Khuyến mãi Điều trị da",
+      "content": [
+        {
+          "title": "CẤY COLLAGEN TƯƠI",
+          "description": ["Giảm 30% cho lần đầu tiên"]
+        },
+        {
+          "title": "NÂNG MŨI",
+          "description": [
+            "Ưu đãi 65% khi đăng ký liệu trình",
+            "Tặng Voucher 1.000.000VNĐ"
+          ]
+        },
+        {
+          "title": "TRẺ HÓA DA",
+          "description": ["Giảm 30% cho lần đầu tiên"]
+        },
+        {
+          "title": "CẮT MÍ",
+          "description": ["Giảm 30% cho lần đầu tiên"]
+        }
+      ],
+      "images": [
+        "/images/promotions/km-dieu-tri-da-1.png",
+        "/images/promotions/km-dieu-tri-da-2.png",
+        "/images/promotions/km-dieu-tri-da-3.png"
+      ]
+    }
+  },
+  {
+    "banner": "/images/promotions/tre-hoa-da.png",
+    "isHot": true,
+    "tab": "tab_tre-hoa-da",
+    "details": {
+      "alt": "Khuyến mãi Điều trị da",
+      "content": [
+        {
+          "title": "CẤY COLLAGEN TƯƠI",
+          "description": ["Giảm 30% cho lần đầu tiên"]
+        },
+        {
+          "title": "NÂNG MŨI",
+          "description": [
+            "Ưu đãi 65% khi đăng ký liệu trình",
+            "Tặng Voucher 1.000.000VNĐ"
+          ]
+        },
+        {
+          "title": "TRẺ HÓA DA",
+          "description": ["Giảm 30% cho lần đầu tiên"]
+        },
+        {
+          "title": "CẮT MÍ",
+          "description": ["Giảm 30% cho lần đầu tiên"]
+        }
+      ],
+      "images": [
+        "/images/promotions/km-dieu-tri-da-1.png",
+        "/images/promotions/km-dieu-tri-da-2.png",
+        "/images/promotions/km-dieu-tri-da-3.png"
+      ]
+    }
+  },
+  {
+    "banner": "/images/promotions/cat-mi.png",
+    "isHot": true,
+    "tab": "tab_cat-mi",
+    "details": {
+      "alt": "Khuyến mãi Điều trị da",
+      "content": [
+        {
+          "title": "CẤY COLLAGEN TƯƠI",
+          "description": ["Giảm 30% cho lần đầu tiên"]
+        },
+        {
+          "title": "NÂNG MŨI",
+          "description": [
+            "Ưu đãi 65% khi đăng ký liệu trình",
+            "Tặng Voucher 1.000.000VNĐ"
+          ]
+        },
+        {
+          "title": "TRẺ HÓA DA",
+          "description": ["Giảm 30% cho lần đầu tiên"]
+        },
+        {
+          "title": "CẮT MÍ",
+          "description": ["Giảm 30% cho lần đầu tiên"]
+        }
+      ],
+      "images": [
+        "/images/promotions/km-dieu-tri-da-1.png",
+        "/images/promotions/km-dieu-tri-da-2.png",
+        "/images/promotions/km-dieu-tri-da-3.png"
+      ]
+    }
+  },
+  {
+    "banner": "/images/promotions/nang-mui.png",
+    "isHot": true,
+    "tab": "tab_nang-mui",
+    "details": {
+      "alt": "Khuyến mãi Điều trị da",
+      "content": [
+        {
+          "title": "CẤY COLLAGEN TƯƠI",
+          "description": ["Giảm 30% cho lần đầu tiên"]
+        },
+        {
+          "title": "NÂNG MŨI",
+          "description": [
+            "Ưu đãi 65% khi đăng ký liệu trình",
+            "Tặng Voucher 1.000.000VNĐ"
+          ]
+        },
+        {
+          "title": "TRẺ HÓA DA",
+          "description": ["Giảm 30% cho lần đầu tiên"]
+        },
+        {
+          "title": "CẮT MÍ",
+          "description": ["Giảm 30% cho lần đầu tiên"]
+        }
+      ],
+      "images": [
+        "/images/promotions/km-dieu-tri-da-1.png",
+        "/images/promotions/km-dieu-tri-da-2.png",
+        "/images/promotions/km-dieu-tri-da-3.png"
+      ]
+    }
+  },
+  {
+    "banner": "/images/promotions/nang-cung-chan-may.png",
+    "isHot": true,
+    "tab": "tab_nang-cung-chan-may",
+    "details": {
+      "alt": "Khuyến mãi Điều trị da",
+      "content": [
+        {
+          "title": "CẤY COLLAGEN TƯƠI",
+          "description": ["Giảm 30% cho lần đầu tiên"]
+        },
+        {
+          "title": "NÂNG MŨI",
+          "description": [
+            "Ưu đãi 65% khi đăng ký liệu trình",
+            "Tặng Voucher 1.000.000VNĐ"
+          ]
+        },
+        {
+          "title": "TRẺ HÓA DA",
+          "description": ["Giảm 30% cho lần đầu tiên"]
+        },
+        {
+          "title": "CẮT MÍ",
+          "description": ["Giảm 30% cho lần đầu tiên"]
+        }
+      ],
+      "images": [
+        "/images/promotions/km-dieu-tri-da-1.png",
+        "/images/promotions/km-dieu-tri-da-2.png",
+        "/images/promotions/km-dieu-tri-da-3.png"
+      ]
+    }
+  }
+]

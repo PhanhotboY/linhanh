@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Carat",
+    "logo": "/images/doi-tac/carat.png",
+    "link": "https://www.carat.com/"
+  },
+  {
+    "name": "INamed",
+    "logo": "/images/doi-tac/inamed.png",
+    "link": "https://inamed.com.vn/"
+  },
+  {
+    "name": "IPretty",
+    "logo": "/images/doi-tac/ipretty.png",
+    "link": "https://ipretty.vn/"
+  },
+  {
+    "name": "Minh Khuong",
+    "logo": "/images/doi-tac/minhkhuong.png",
+    "link": "https://minhkhuong.vn/"
+  },
+  {
+    "name": "Quantum Health Care",
+    "logo": "/images/doi-tac/quantumhealthcare.png",
+    "link": "https://quantumhealthcare.com/"
+  },
+  {
+    "name": "Sejung",
+    "logo": "/images/doi-tac/sejung.png",
+    "link": "https://sejung.vn/"
+  }
+]
