@@ -1,7 +1,7 @@
-import * as SurveyCore from 'survey-core';
-import * as SurveyReactUi from 'survey-react-ui';
+import * as SurveyCore from "survey-core";
+import * as SurveyReactUi from "survey-react-ui";
 
-import 'survey-core/defaultV2.css';
+import "survey-core/survey-core.min.css";
 
 const { Model } = SurveyCore;
 const { Survey } = SurveyReactUi;
