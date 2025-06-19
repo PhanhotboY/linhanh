@@ -5,6 +5,8 @@ import { lazy, Suspense, useState } from "react";
 import { RiMapPin2Fill } from "@remixicon/react";
 import { Image } from "@unpic/react";
 import { motion } from "framer-motion";
+import * as fs from "fs/promises";
+import * as path from "path";
 
 import Title from "~/components/Title";
 import Card from "~/components/Card";
