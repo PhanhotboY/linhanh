@@ -279,7 +279,7 @@ export default function Index() {
                     className="w-2/3 max-md:w-max lg:max-xl:w-full max-sm:-ml-24 uppercase"
                     href="/"
                   >
-                    Learn More
+                    Tìm hiểu thêm
                   </RiButton>
                 </div>
 
