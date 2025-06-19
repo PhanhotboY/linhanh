@@ -35,29 +35,25 @@ section {
     #f87171 0%,
     var(--main-color) 100%
   );
-  --sub1-color: #bea865;
-  --sub2-color: #ff6400;
+  --sub1-color: #fbbf24;
+  --sub2-color: #eab308;
   --sub3-color: #e0e0e0;
   --sub4-color: #fff;
 
   --main-bg-color: #fef7f7;
-  --sub1-bg-color: #fdf2f2;
+  --sub1-bg-color: #fffbeb;
 
   --main-text-color: #dc2626;
   --sub1-text-color: #fff;
-  --sub2-text-color: #fca5a5;
+  --sub2-text-color: #fde047;
   --sub3-text-color: #4f4f4f;
 
   --shadow-color: rgba(220, 38, 38, 0.28);
-  --sub1-gradient: linear-gradient(
-    163.98deg,
-    var(--sub2-color) -19.99%,
-    #fbad17 126.32%
-  );
+  --sub1-gradient: linear-gradient(163.98deg, #fbbf24 -19.99%, #eab308 126.32%);
   --sub2-gradient: linear-gradient(
     90deg,
-    rgba(213, 196, 124, 1) 0%,
-    rgba(154, 117, 47, 1) 100%
+    rgba(251, 191, 36, 1) 0%,
+    rgba(234, 179, 8, 1) 100%
   );
   --header-height: 96px;
 
