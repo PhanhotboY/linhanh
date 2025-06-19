@@ -1,104 +1,38 @@
 [
   {
-    "label": "Phun xăm thẩm mỹ",
-    "image": "/images/services/dieu-khac-chan-may.png",
-    "value": "phun-xam-tham-my",
-    "description": "Với kỹ thuật điêu khắc từng sợi lông mày tinh tế, chuyên viên sẽ giúp bạn sở hữu khuôn mày phù hợp với gương mặt, tạo nên nét đẹp hài hòa và cuốn hút."
+    "label": "Technology & IT",
+    "image": "/images/services/technology.png",
+    "value": "technology",
+    "description": "Discover exciting opportunities in software development, cybersecurity, data science, and emerging technologies. Join innovative companies that are shaping the digital future."
   },
   {
-    "label": "Phun xăm thẩm mỹ",
-    "image": "/images/services/dieu-khac-chan-may.png",
-    "value": "phun-xam-tham-my",
-    "description": "Với kỹ thuật điêu khắc từng sợi lông mày tinh tế, chuyên viên sẽ giúp bạn sở hữu khuôn mày phù hợp với gương mặt, tạo nên nét đẹp hài hòa và cuốn hút."
+    "label": "Healthcare & Medical",
+    "image": "/images/services/healthcare.png",
+    "value": "healthcare",
+    "description": "Make a difference in people's lives with rewarding careers in nursing, medicine, therapy, and healthcare administration. Build a meaningful career in this essential industry."
   },
   {
-    "label": "Phun xăm thẩm mỹ",
-    "image": "/images/services/dieu-khac-chan-may.png",
-    "value": "phun-xam-tham-my",
-    "description": "Với kỹ thuật điêu khắc từng sợi lông mày tinh tế, chuyên viên sẽ giúp bạn sở hữu khuôn mày phù hợp với gương mặt, tạo nên nét đẹp hài hòa và cuốn hút."
+    "label": "Business & Finance",
+    "image": "/images/services/finance.png",
+    "value": "finance",
+    "description": "Excel in dynamic roles across accounting, financial planning, investment banking, and corporate strategy. Drive business growth and financial success."
   },
   {
-    "label": "Phun xăm thẩm mỹ",
-    "image": "/images/services/dieu-khac-chan-may.png",
-    "value": "phun-xam-tham-my",
-    "description": "Với kỹ thuật điêu khắc từng sợi lông mày tinh tế, chuyên viên sẽ giúp bạn sở hữu khuôn mày phù hợp với gương mặt, tạo nên nét đẹp hài hòa và cuốn hút."
+    "label": "Education & Training",
+    "image": "/images/services/education.png",
+    "value": "education",
+    "description": "Shape the next generation through teaching, curriculum development, educational technology, and academic administration. Inspire and educate future leaders."
   },
   {
-    "label": "Phun xăm thẩm mỹ",
-    "image": "/images/services/dieu-khac-chan-may.png",
-    "value": "phun-xam-tham-my",
-    "description": "Với kỹ thuật điêu khắc từng sợi lông mày tinh tế, chuyên viên sẽ giúp bạn sở hữu khuôn mày phù hợp với gương mặt, tạo nên nét đẹp hài hòa và cuốn hút."
+    "label": "Marketing & Sales",
+    "image": "/images/services/marketing.png",
+    "value": "marketing",
+    "description": "Build brands and drive revenue through creative marketing campaigns, sales strategies, digital marketing, and customer relationship management."
   },
   {
-    "label": "Thẩm mỹ công nghệ cao",
-    "image": "/images/services/tham-my-vung-kin.png",
-    "value": "tham-my-cong-nghe-cao",
-    "description": "Với kỹ thuật điêu khắc từng sợi lông mày tinh tế, chuyên viên sẽ giúp bạn sở hữu khuôn mày phù hợp với gương mặt, tạo nên nét đẹp hài hòa và cuốn hút."
-  },
-  {
-    "label": "Thẩm mỹ công nghệ cao",
-    "image": "/images/services/tham-my-vung-kin.png",
-    "value": "tham-my-cong-nghe-cao",
-    "description": "Với kỹ thuật điêu khắc từng sợi lông mày tinh tế, chuyên viên sẽ giúp bạn sở hữu khuôn mày phù hợp với gương mặt, tạo nên nét đẹp hài hòa và cuốn hút."
-  },
-  {
-    "label": "Thẩm mỹ công nghệ cao",
-    "image": "/images/services/tham-my-vung-kin.png",
-    "value": "tham-my-cong-nghe-cao",
-    "description": "Với kỹ thuật điêu khắc từng sợi lông mày tinh tế, chuyên viên sẽ giúp bạn sở hữu khuôn mày phù hợp với gương mặt, tạo nên nét đẹp hài hòa và cuốn hút."
-  },
-  {
-    "label": "Thẩm mỹ công nghệ cao",
-    "image": "/images/services/tham-my-vung-kin.png",
-    "value": "tham-my-cong-nghe-cao",
-    "description": "Với kỹ thuật điêu khắc từng sợi lông mày tinh tế, chuyên viên sẽ giúp bạn sở hữu khuôn mày phù hợp với gương mặt, tạo nên nét đẹp hài hòa và cuốn hút."
-  },
-  {
-    "label": "Thẩm mỹ công nghệ cao",
-    "image": "/images/services/tham-my-vung-kin.png",
-    "value": "tham-my-cong-nghe-cao",
-    "description": "Với kỹ thuật điêu khắc từng sợi lông mày tinh tế, chuyên viên sẽ giúp bạn sở hữu khuôn mày phù hợp với gương mặt, tạo nên nét đẹp hài hòa và cuốn hút."
-  },
-  {
-    "label": "Thẩm mỹ công nghệ cao",
-    "image": "/images/services/tham-my-vung-kin.png",
-    "value": "tham-my-cong-nghe-cao",
-    "description": "Với kỹ thuật điêu khắc từng sợi lông mày tinh tế, chuyên viên sẽ giúp bạn sở hữu khuôn mày phù hợp với gương mặt, tạo nên nét đẹp hài hòa và cuốn hút."
-  },
-  {
-    "label": "Phẫu thuật thẩm mỹ",
-    "image": "/images/services/phun-mi.png",
-    "value": "phau-thuat-tham-my",
-    "description": "Với kỹ thuật điêu khắc từng sợi lông mày tinh tế, chuyên viên sẽ giúp bạn sở hữu khuôn mày phù hợp với gương mặt, tạo nên nét đẹp hài hòa và cuốn hút."
-  },
-  {
-    "label": "Phẫu thuật thẩm mỹ",
-    "image": "/images/services/phun-mi.png",
-    "value": "phau-thuat-tham-my",
-    "description": "Với kỹ thuật điêu khắc từng sợi lông mày tinh tế, chuyên viên sẽ giúp bạn sở hữu khuôn mày phù hợp với gương mặt, tạo nên nét đẹp hài hòa và cuốn hút."
-  },
-  {
-    "label": "Phẫu thuật thẩm mỹ",
-    "image": "/images/services/phun-mi.png",
-    "value": "phau-thuat-tham-my",
-    "description": "Với kỹ thuật điêu khắc từng sợi lông mày tinh tế, chuyên viên sẽ giúp bạn sở hữu khuôn mày phù hợp với gương mặt, tạo nên nét đẹp hài hòa và cuốn hút."
-  },
-  {
-    "label": "Phẫu thuật thẩm mỹ",
-    "image": "/images/services/phun-mi.png",
-    "value": "phau-thuat-tham-my",
-    "description": "Với kỹ thuật điêu khắc từng sợi lông mày tinh tế, chuyên viên sẽ giúp bạn sở hữu khuôn mày phù hợp với gương mặt, tạo nên nét đẹp hài hòa và cuốn hút."
-  },
-  {
-    "label": "Phẫu thuật thẩm mỹ",
-    "image": "/images/services/phun-mi.png",
-    "value": "phau-thuat-tham-my",
-    "description": "Với kỹ thuật điêu khắc từng sợi lông mày tinh tế, chuyên viên sẽ giúp bạn sở hữu khuôn mày phù hợp với gương mặt, tạo nên nét đẹp hài hòa và cuốn hút."
-  },
-  {
-    "label": "Phẫu thuật thẩm mỹ",
-    "image": "/images/services/phun-mi.png",
-    "value": "phau-thuat-tham-my",
-    "description": "Với kỹ thuật điêu khắc từng sợi lông mày tinh tế, chuyên viên sẽ giúp bạn sở hữu khuôn mày phù hợp với gương mặt, tạo nên nét đẹp hài hòa và cuốn hút."
+    "label": "Engineering & Manufacturing",
+    "image": "/images/services/engineering.png",
+    "value": "engineering",
+    "description": "Design and build the future with opportunities in civil, mechanical, electrical engineering, and advanced manufacturing processes."
   }
 ]
