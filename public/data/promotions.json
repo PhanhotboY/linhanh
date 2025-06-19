@@ -1,41 +1,41 @@
 [
   {
-    "title": "Premium Career Package",
-    "description": "Unlock exclusive job opportunities with our premium membership",
+    "title": "Gói Nghề nghiệp Cao cấp",
+    "description": "Mở khóa các cơ hội việc làm độc quyền với thành viên cao cấp của chúng tôi",
     "features": [
-      "Priority access to executive positions",
-      "1-on-1 career coaching sessions",
-      "Professional resume optimization",
-      "Salary negotiation guidance",
-      "Industry insights and trends",
-      "Networking event invitations"
+      "Quyền ưu tiên tiếp cận các vị trí điều hành",
+      "Phiên coaching nghề nghiệp 1-1",
+      "Tối ưu hóa CV chuyên nghiệp",
+      "Hướng dẫn đàm phán lương",
+      "Thông tin chi tiết và xu hướng ngành",
+      "Lời mời tham gia sự kiện networking"
     ],
     "image": "/images/promotions/premium-package.png",
     "isHot": true
   },
   {
-    "title": "Free Career Assessment",
-    "description": "Discover your ideal career path with our comprehensive assessment",
+    "title": "Đánh giá Nghề nghiệp Miễn phí",
+    "description": "Khám phá con đường sự nghiệp lý tưởng của b���n với đánh giá toàn diện của chúng tôi",
     "features": [
-      "Personality and skills analysis",
-      "Industry compatibility testing",
-      "Salary expectations calculator",
-      "Career progression roadmap",
-      "Personalized job recommendations"
+      "Phân tích tính cách và kỹ năng",
+      "Kiểm tra tương thích ngành nghề",
+      "Máy tính kỳ vọng lương",
+      "Lộ trình phát triển nghề nghiệp",
+      "Gợi ý việc làm được cá nhân hóa"
     ],
     "image": "/images/promotions/career-assessment.png",
     "isHot": false
   },
   {
-    "title": "Interview Success Program",
-    "description": "Master the interview process with expert guidance",
+    "title": "Chương trình Thành công Phỏng vấn",
+    "description": "Làm chủ quy trình phỏng vấn với hướng dẫn chuyên gia",
     "features": [
-      "Mock interview sessions",
-      "Industry-specific preparation",
-      "Behavioral question training",
-      "Technical skills assessment",
-      "Confidence building workshops",
-      "Follow-up strategies"
+      "Phiên phỏng vấn thử",
+      "Chuẩn bị theo ngành cụ thể",
+      "Đào tạo câu hỏi hành vi",
+      "Đánh giá kỹ năng kỹ thuật",
+      "Workshop xây dựng tự tin",
+      "Chiến lược theo dõi"
     ],
     "image": "/images/promotions/interview-program.png",
     "isHot": true
