@@ -1,98 +1,44 @@
 [
   {
-    "name": "John Doe",
-    "age": 30,
-    "image": "/images/customers/dan-thy.png",
-    "label": "Phun xăm thẩm mỹ",
-    "value": "phun-xam-tham-my",
-    "description": "Khắc phục môi thâm bẩm sinh. Lấy lại đôi môi hồng hào, tươi tắn"
+    "name": "Jennifer Walsh",
+    "age": "Software Engineer",
+    "image": "/images/success/jennifer-walsh.png",
+    "value": "tech-success",
+    "description": "Found my dream job at a leading tech company within 2 weeks. The platform's AI matching was incredible!"
   },
   {
-    "name": "John Doe",
-    "age": 30,
-    "image": "/images/customers/dan-thy.png",
-    "label": "Phun xăm thẩm mỹ",
-    "value": "phun-xam-tham-my",
-    "description": "Khắc phục môi thâm bẩm sinh. Lấy lại đôi môi hồng hào, tươi tắn"
+    "name": "Marcus Johnson",
+    "age": "Product Manager",
+    "image": "/images/success/marcus-johnson.png",
+    "value": "tech-success",
+    "description": "Transitioned from consulting to product management seamlessly. The career coaching was invaluable."
   },
   {
-    "name": "John Doe",
-    "age": 30,
-    "image": "/images/customers/dan-thy.png",
-    "label": "Phun xăm thẩm mỹ",
-    "value": "phun-xam-tham-my",
-    "description": "Khắc phục môi thâm bẩm sinh. Lấy lại đôi môi hồng hào, tươi tắn"
+    "name": "Dr. Patricia Lee",
+    "age": "Healthcare Director",
+    "image": "/images/success/patricia-lee.png",
+    "value": "healthcare-success",
+    "description": "Advanced my healthcare career with personalized job recommendations that fit my specialization perfectly."
   },
   {
-    "name": "John Doe",
-    "age": 30,
-    "image": "/images/customers/dan-thy.png",
-    "label": "Phun xăm thẩm mỹ",
-    "value": "phun-xam-tham-my",
-    "description": "Khắc phục môi thâm bẩm sinh. Lấy lại đôi môi hồng hào, tươi tắn"
+    "name": "Robert Chen",
+    "age": "Financial Analyst",
+    "image": "/images/success/robert-chen.png",
+    "value": "finance-success",
+    "description": "Secured a position at a top investment firm. The interview preparation resources were outstanding."
   },
   {
-    "name": "John Doe",
-    "age": 30,
-    "image": "/images/customers/dan-thy.png",
-    "label": "Phun xăm thẩm mỹ",
-    "value": "phun-xam-tham-my",
-    "description": "Khắc phục môi thâm bẩm sinh. Lấy lại đôi môi hồng hào, tươi tắn"
+    "name": "Amanda Foster",
+    "age": "Marketing Director",
+    "image": "/images/success/amanda-foster.png",
+    "value": "marketing-success",
+    "description": "Doubled my salary and found the perfect company culture match. This platform truly understands talent."
   },
   {
-    "name": "John Doe",
-    "age": 30,
-    "image": "/images/customers/dan-thy.png",
-    "label": "Phun xăm thẩm mỹ",
-    "value": "phun-xam-tham-my",
-    "description": "Khắc phục môi thâm bẩm sinh. Lấy lại đôi môi hồng hào, tươi tắn"
-  },
-  {
-    "name": "Chị Phương Nga",
-    "age": 23,
-    "image": "/images/customers/dan-thy.png",
-    "label": "Thẩm mỹ công nghệ cao",
-    "value": "tham-my-cong-nghe-cao",
-    "description": "Tạo dáng mày thanh mảnh tự nhiên, khắc phục chân mày nhạt"
-  },
-  {
-    "name": "Chị Phương Nga",
-    "age": 23,
-    "image": "/images/customers/dan-thy.png",
-    "label": "Thẩm mỹ công nghệ cao",
-    "value": "tham-my-cong-nghe-cao",
-    "description": "Tạo dáng mày thanh mảnh tự nhiên, khắc phục chân mày nhạt"
-  },
-  {
-    "name": "Chị Phương Nga",
-    "age": 23,
-    "image": "/images/customers/dan-thy.png",
-    "label": "Thẩm mỹ công nghệ cao",
-    "value": "tham-my-cong-nghe-cao",
-    "description": "Tạo dáng mày thanh mảnh tự nhiên, khắc phục chân mày nhạt"
-  },
-  {
-    "name": "Chị Bích Ngọc",
-    "age": 29,
-    "image": "/images/customers/dan-thy.png",
-    "label": "Phẫu thuật thẩm mỹ",
-    "value": "phau-thuat-tham-my",
-    "description": "Cải thiện chân mày thưa nhạt, không cân đối, dáng mày như ý"
-  },
-  {
-    "name": "Chị Bích Ngọc",
-    "age": 29,
-    "image": "/images/customers/dan-thy.png",
-    "label": "Phẫu thuật thẩm mỹ",
-    "value": "phau-thuat-tham-my",
-    "description": "Cải thiện chân mày thưa nhạt, không cân đối, dáng mày như ý"
-  },
-  {
-    "name": "Chị Bích Ngọc",
-    "age": 29,
-    "image": "/images/customers/dan-thy.png",
-    "label": "Phẫu thuật thẩm mỹ",
-    "value": "phau-thuat-tham-my",
-    "description": "Cải thiện chân mày thưa nhạt, không cân đối, dáng mày như ý"
+    "name": "Prof. James Wright",
+    "age": "Education Leader",
+    "image": "/images/success/james-wright.png",
+    "value": "education-success",
+    "description": "Moved from classroom teaching to educational leadership. The career pathway guidance was exceptional."
   }
 ]
