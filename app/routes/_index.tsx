@@ -180,7 +180,14 @@ export default function Index() {
         </div>
       </motion.section>
 
-      <section id="branch" className="py-8">
+      <motion.section
+        id="branch"
+        className="py-8"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeInLeft}
+      >
         <div className="container">
           <Title
             tabs={getLabelValue(branches)}
@@ -190,9 +197,11 @@ export default function Index() {
             CHI NHÁNH
           </Title>
 
-          <BranchCards branches={branches} value={activeBranch} />
+          <motion.div variants={slideInFromBottom}>
+            <BranchCards branches={branches} value={activeBranch} />
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       <section id="facilities" className="p-8">
         <div className="container">
