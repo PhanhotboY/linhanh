@@ -1,44 +1,44 @@
 [
   {
     "name": "Jennifer Walsh",
-    "age": "Software Engineer",
+    "age": "Kỹ sư Phần mềm",
     "image": "/images/success/jennifer-walsh.png",
     "value": "tech-success",
-    "description": "Found my dream job at a leading tech company within 2 weeks. The platform's AI matching was incredible!"
+    "description": "Tìm được công việc mơ ước tại một công ty công nghệ hàng đầu chỉ trong 2 tuần. Tính năng AI ghép đôi của nền tảng thật không thể tin được!"
   },
   {
     "name": "Marcus Johnson",
-    "age": "Product Manager",
+    "age": "Quản lý Sản phẩm",
     "image": "/images/success/marcus-johnson.png",
     "value": "tech-success",
-    "description": "Transitioned from consulting to product management seamlessly. The career coaching was invaluable."
+    "description": "Chuyển đổi từ tư vấn sang quản lý sản phẩm một cách suôn sẻ. Dịch vụ coaching nghề nghiệp thật vô giá."
   },
   {
-    "name": "Dr. Patricia Lee",
-    "age": "Healthcare Director",
+    "name": "Bác sĩ Patricia Lee",
+    "age": "Giám đốc Y tế",
     "image": "/images/success/patricia-lee.png",
     "value": "healthcare-success",
-    "description": "Advanced my healthcare career with personalized job recommendations that fit my specialization perfectly."
+    "description": "Thăng tiến trong sự nghiệp y tế với các gợi ý việc làm được cá nhân hóa phù hợp hoàn hảo với chuyên môn của tôi."
   },
   {
     "name": "Robert Chen",
-    "age": "Financial Analyst",
+    "age": "Chuyên viên Phân tích Tài chính",
     "image": "/images/success/robert-chen.png",
     "value": "finance-success",
-    "description": "Secured a position at a top investment firm. The interview preparation resources were outstanding."
+    "description": "Đảm bảo được vị trí tại một công ty đầu tư hàng đầu. Tài nguyên chuẩn bị phỏng vấn thật xuất sắc."
   },
   {
     "name": "Amanda Foster",
-    "age": "Marketing Director",
+    "age": "Giám đốc Marketing",
     "image": "/images/success/amanda-foster.png",
     "value": "marketing-success",
-    "description": "Doubled my salary and found the perfect company culture match. This platform truly understands talent."
+    "description": "Tăng gấp đôi mức lương và tìm được sự phù hợp văn hóa công ty hoàn hảo. Nền tảng này thực sự hiểu về nhân tài."
   },
   {
-    "name": "Prof. James Wright",
-    "age": "Education Leader",
+    "name": "Giáo sư James Wright",
+    "age": "Nhà lãnh đạo Giáo dục",
     "image": "/images/success/james-wright.png",
     "value": "education-success",
-    "description": "Moved from classroom teaching to educational leadership. The career pathway guidance was exceptional."
+    "description": "Chuyển từ giảng dạy trong lớp học sang lãnh đạo giáo dục. Hướng dẫn lộ trình nghề nghiệp thật đặc biệt."
   }
 ]
