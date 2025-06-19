@@ -202,7 +202,7 @@ export default function Index() {
         variants={fadeInUp}
       >
         <div className="container">
-          <Title>CAREER ADVANCEMENT PROGRAMS</Title>
+          <Title>CHƯƠNG TRÌNH THĂNG TIẾN NGHỀ NGHIỆP</Title>
 
           <motion.div variants={slideInFromBottom}>
             <MasterDetail data={promotions} />
