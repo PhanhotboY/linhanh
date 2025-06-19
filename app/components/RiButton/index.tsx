@@ -15,8 +15,17 @@ export default function RiButton({
   href: string;
 }) {
   return (
-    <Link className={`${css.button} ${className}`} to={href} style={style}>
-      {children}
-    </Link>
+    <motion.div
+      variants={bounceIn}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+    >
+      <Link className={`${css.button} ${className}`} to={href} style={style}>
+        {children}
+      </Link>
+    </motion.div>
   );
 }
