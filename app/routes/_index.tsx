@@ -233,44 +233,67 @@ export default function Index() {
         </div>
       </motion.section>
 
-      <section id="facilities" className="p-8">
+      <motion.section
+        id="culture"
+        className="p-8"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeInUp}
+      >
         <div className="container">
-          <Title>CÔNG NGHỆ TIÊN TIẾN - CƠ SỞ VẬT CHẤT HIỆN ĐẠI</Title>
+          <Title>CUTTING-EDGE WORKPLACE - MODERN COMPANY CULTURE</Title>
 
-          <div className="flex items-center xl:mt-20 max-lg:flex-wrap max-md:-mx-6 lg:-ml-8">
-            {[1, 1].map((n, i) => (
-              <article
+          <motion.div
+            className="flex items-center xl:mt-20 max-lg:flex-wrap max-md:-mx-6 lg:-ml-8"
+            variants={staggerContainer}
+          >
+            {[
+              {
+                title: "AI-POWERED MATCHING",
+                description:
+                  "Our advanced AI technology matches you with opportunities that align perfectly with your skills, experience, and career aspirations.",
+                image: "/images/ai-technology.png",
+              },
+              {
+                title: "FLEXIBLE WORK CULTURE",
+                description:
+                  "Embrace the future of work with remote-first opportunities, flexible schedules, and work-life balance that suits your lifestyle.",
+                image: "/images/flexible-work.png",
+              },
+            ].map((item, i) => (
+              <motion.article
                 key={i}
                 className="flex max-sm:flex-row-reverse rounded-xl relative h-fit max-xl:mb-8 lg:ml-8"
                 style={{ boxShadow: "1px 2px 10px 2px var(--shadow-color)" }}
+                variants={staggerItem}
               >
                 <div className="flex flex-col w-1/2 xl:w-3/5 py-5 px-5 xl:px-8">
-                  <h3 className="m-0">CÔNG NGHỆ THẨM MỸ</h3>
+                  <h3 className="m-0">{item.title}</h3>
 
                   <p className="mt-2 mb-4 color-sub3 flex-grow">
-                    Áp dụng công nghệ tiên tiến bậc nhất được chuyển giao từ các
-                    tập đoàn công nghệ thẩm mỹ hàng đầu thế giới.
+                    {item.description}
                   </p>
 
                   <RiButton
                     className="w-2/3 max-md:w-max lg:max-xl:w-full max-sm:-ml-24 uppercase"
                     href="/"
                   >
-                    Tìm hiểu thêm
+                    Learn More
                   </RiButton>
                 </div>
 
                 <Image
                   className="h-fit max-md:mt-8 xl:absolute w-1/2 xl:w-2/5 right-0 xl:-top-1/3"
-                  src="/images/cong-nghe-tham-my.png"
-                  alt=""
+                  src={item.image}
+                  alt={item.title}
                   layout="fullWidth"
                 />
-              </article>
+              </motion.article>
             ))}
-          </div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       <section id="members" className="bg-sub1">
         <div className="container py-14">
