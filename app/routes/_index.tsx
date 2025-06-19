@@ -302,7 +302,7 @@ export default function Index() {
             activeTab={activeMember}
             changeTabHandler={(tab) => setActiveMember(tab)}
           >
-            ĐỘI NGŨ BÁC SĨ - KỸ THUẬT VIÊN
+            EXPERT CAREER CONSULTANTS
           </Title>
 
           <MemberCards members={members} value={activeMember} />
