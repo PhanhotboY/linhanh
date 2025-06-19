@@ -486,7 +486,7 @@ const PhunXamCards = ({
   value: string;
 }) => {
   return (
-    <div className="wrapper max-lg:overflow-x-scroll max-lg:w-screen max-lg:-mt-8">
+    <div className="wrapper max-lg:overflow-x-scroll w-full max-lg:-mt-8">
       <motion.div
         className="lg:grid grid-cols-12 gap-x-5 lg:gap-x-8 gap-y-8 flex flex-nowrap max-lg:p-8"
         variants={staggerContainer}
@@ -601,7 +601,7 @@ const MemberCards = ({
                 Được đào tạo chuyên nghiệp trong lĩnh vực Chăm sóc da
               </p>
               <p className="rounded-xl p-2.5 mt-4 bg-sub1 text-black">
-                Hơn 4 năm kinh nghiệm Chăm sóc da thẩm m�� tại bệnh viện Da liễu
+                Hơn 4 năm kinh nghiệm Chăm sóc da thẩm mỹ tại bệnh viện Da liễu
               </p>
             </Card>
           ) : null
