@@ -13,8 +13,8 @@
       width: 4rem;
       height: 0.3rem;
       display: block;
-      content: '';
-      background: #e9e2f7;
+      content: "";
+      background: #fecaca;
       margin-top: 5px;
       border-radius: 5px;
     }
@@ -39,7 +39,7 @@
       &:not(:last-child)::after {
         background-color: #e0e0e0;
         width: 4px;
-        content: '';
+        content: "";
         display: block;
         position: absolute;
         top: 0;
