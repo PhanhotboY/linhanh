@@ -25,6 +25,15 @@ import {
 const Slider = lazy(() => import("~/components/Slider"));
 
 export const loader = async ({ request }: LoaderFunctionArgs) => {
+  let branches,
+    services,
+    promotions,
+    members,
+    customers,
+    blogs,
+    testimonies,
+    partners;
+
   try {
     const dataPath = path.join(process.cwd(), "public", "data");
 
@@ -48,25 +57,25 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
       fs.readFile(path.join(dataPath, "partners.json"), "utf-8"),
     ]);
 
-    const branches = JSON.parse(branchesData);
-    const services = JSON.parse(servicesData);
-    const promotions = JSON.parse(promotionsData);
-    const members = JSON.parse(membersData);
-    const customers = JSON.parse(customersData);
-    const blogs = JSON.parse(blogsData);
-    const testimonies = JSON.parse(testimoniesData);
-    const partners = JSON.parse(partnersData);
+    branches = JSON.parse(branchesData);
+    services = JSON.parse(servicesData);
+    promotions = JSON.parse(promotionsData);
+    members = JSON.parse(membersData);
+    customers = JSON.parse(customersData);
+    blogs = JSON.parse(blogsData);
+    testimonies = JSON.parse(testimoniesData);
+    partners = JSON.parse(partnersData);
   } catch (error) {
     console.error("Error loading data files:", error);
     // Return empty arrays as fallback
-    const branches = [];
-    const services = [];
-    const promotions = [];
-    const members = [];
-    const customers = [];
-    const blogs = [];
-    const testimonies = [];
-    const partners = [];
+    branches = [];
+    services = [];
+    promotions = [];
+    members = [];
+    customers = [];
+    blogs = [];
+    testimonies = [];
+    partners = [];
   }
 
   // console.log('url from home: ', url);
