@@ -318,7 +318,7 @@ export default function Index() {
         variants={fadeInUp}
       >
         <div className="container">
-          <Title>FEATURED EMPLOYERS & INDUSTRY LEADERS</Title>
+          <Title>NHÀ TUYỂN DỤNG NỔI BẬT & CÁC NHÀ LÃNH ĐẠO NGÀNH</Title>
 
           <motion.div
             className="wrapper grid-cols-12 relative"
@@ -339,20 +339,20 @@ export default function Index() {
               <Image
                 className="w-2/3"
                 src="/images/ceo-featured.png"
-                alt="Featured CEO"
+                alt="CEO Nổi bật"
                 layout="fullWidth"
               />
 
               <p className="color-main text-lg p-4 text-justify flex-grow">
-                Join thousands of professionals who have launched their careers
-                with top industry leaders. Our platform connects you directly
-                with hiring managers at Fortune 500 companies, innovative
-                startups, and industry pioneers who are shaping the future of
-                work.
+                Tham gia cùng hàng nghìn chuyên gia đã khởi nghiệp sự nghiệp với
+                các nhà lãnh đạo ngành hàng đầu. Nền tảng của chúng tôi kết nối
+                bạn trực tiếp với các nhà quản lý tuyển dụng tại các công ty
+                Fortune 500, startup đổi mới và những người tiên phong trong
+                ngành đang định hình tương lai của công việc.
               </p>
 
               <RiButton className="w-fit px-8 max-md:my-4 mx-auto" href="/">
-                Explore Employers
+                Khám phá Nhà tuyển dụng
               </RiButton>
             </motion.div>
 
