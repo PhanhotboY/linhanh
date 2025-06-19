@@ -1,53 +1,53 @@
-import { Image } from '@unpic/react';
+import { Image } from "@unpic/react";
 
-import style from './index.module.css';
+import style from "./index.module.css";
 import {
   RiFacebookFill,
   RiLinkedinFill,
   RiTiktokFill,
   RiYoutubeFill,
-} from '@remixicon/react';
-import { Link } from '@remix-run/react';
+} from "@remixicon/react";
+import { Link } from "@remix-run/react";
 
 export default function Footer() {
   return (
-    <footer id={`${style.footer}`} className='bg-sub2 max-lg:w-screen'>
-      <div className='container py-10 max-md:px-4'>
-        <div className='flex flex-col max-md:items-center md:grid grid-cols-12 gap-7'>
-          <aside className='col-span-3'>
-            <Link to='/'>
+    <footer id={`${style.footer}`} className="bg-sub2 w-full">
+      <div className="container py-10 max-md:px-4">
+        <div className="flex flex-col max-md:items-center md:grid grid-cols-12 gap-7">
+          <aside className="col-span-3">
+            <Link to="/">
               <Image
-                className='m-auto px-16'
-                src='/images/logo.png'
-                layout='fullWidth'
-                alt='Logo'
+                className="m-auto px-16"
+                src="/images/logo.png"
+                layout="fullWidth"
+                alt="Logo"
               ></Image>
             </Link>
 
-            <p className='text-justify my-4'>
+            <p className="text-justify my-4">
               Với sứ mệnh lan tỏa vẻ đẹp Việt, Linh Anh luôn không ngừng hoàn
               thiện và cải tiến từng ngày để mang đến cho khách hàng những trải
               nghiệm dịch vụ tuyệt vời nhất. Thẩm mỹ quốc tế Linh Anh: Lắng nghe
               từ tâm - Trải nghiệm xứng tầm
             </p>
 
-            <a href='http://' target='_blank' rel='noopener noreferrer'>
+            <a href="http://" target="_blank" rel="noopener noreferrer">
               <img
-                className='m-auto'
-                src='/images/dmca-protected.png'
-                alt='DMCA Protected'
+                className="m-auto"
+                src="/images/dmca-protected.png"
+                alt="DMCA Protected"
               />
             </a>
           </aside>
 
-          <section id={style.contact} className='col-span-3'>
+          <section id={style.contact} className="col-span-3">
             <h3>THÔNG TIN LIÊN HỆ</h3>
 
             <ul>
-              <li className='block max-md:text-center'>
-                <span className='block'>Địa chỉ:</span>
+              <li className="block max-md:text-center">
+                <span className="block">Địa chỉ:</span>
                 <b>
-                  <a href='http://' target='_blank' rel='noopener noreferrer'>
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
                     398 - 400A Đ. Lê Hồng Phong, P.1, Q.10, TP.HCM
                   </a>
                 </b>
@@ -55,13 +55,13 @@ export default function Footer() {
               <li>
                 <span>Hotline:</span>
                 <b>
-                  <a href='tel:0906 933 888'>0906 933 888</a>
+                  <a href="tel:0906 933 888">0906 933 888</a>
                 </b>
               </li>
               <li>
                 <span>Email:</span>
                 <b>
-                  <a href='mailto:thanhhistory203@gmail.com'>
+                  <a href="mailto:thanhhistory203@gmail.com">
                     thanhhistory203@gmail.com
                   </a>
                 </b>
@@ -73,30 +73,30 @@ export default function Footer() {
               </li>
             </ul>
 
-            <section id={style.social_media} className='mt-5'>
-              <h4 className='max-md:text-center'>Theo dõi chúng tôi tại:</h4>
+            <section id={style.social_media} className="mt-5">
+              <h4 className="max-md:text-center">Theo dõi chúng tôi tại:</h4>
 
-              <ul className='flex max-md:justify-center'>
+              <ul className="flex max-md:justify-center">
                 <li>
-                  <a href='/' target='_blank' rel='noopener noreferrer'>
+                  <a href="/" target="_blank" rel="noopener noreferrer">
                     <RiFacebookFill />
                   </a>
                 </li>
 
                 <li>
-                  <a href='/' target='_blank' rel='noopener noreferrer'>
+                  <a href="/" target="_blank" rel="noopener noreferrer">
                     <RiTiktokFill />
                   </a>
                 </li>
 
                 <li>
-                  <a href='/' target='_blank' rel='noopener noreferrer'>
+                  <a href="/" target="_blank" rel="noopener noreferrer">
                     <RiYoutubeFill />
                   </a>
                 </li>
 
                 <li>
-                  <a href='/' target='_blank' rel='noopener noreferrer'>
+                  <a href="/" target="_blank" rel="noopener noreferrer">
                     <RiLinkedinFill />
                   </a>
                 </li>
@@ -104,71 +104,71 @@ export default function Footer() {
             </section>
           </section>
 
-          <section className='col-span-3'>
+          <section className="col-span-3">
             <h3>CHÍNH SÁCH CHUNG</h3>
 
             <ul>
               <li>
-                <Link to=''>Chính sách và quy định chung</Link>
+                <Link to="">Chính sách và quy định chung</Link>
               </li>
               <li>
-                <Link to=''>Chính sách bảo mật và thông tin</Link>
+                <Link to="">Chính sách bảo mật và thông tin</Link>
               </li>
               <li>
-                <Link to=''>Hệ thống chi nhánh</Link>
+                <Link to="">Hệ thống chi nhánh</Link>
               </li>
               <li>
-                <Link to=''>Tuyển dụng</Link>
+                <Link to="">Tuyển dụng</Link>
               </li>
               <li>
-                <Link to=''>Nhận tư vấn miễn phí</Link>
+                <Link to="">Nhận tư vấn miễn phí</Link>
               </li>
               <li>
-                <Link to=''>Tiếp nhận ý kiến phản ánh</Link>
+                <Link to="">Tiếp nhận ý kiến phản ánh</Link>
               </li>
             </ul>
           </section>
 
-          <section className='col-span-3'>
+          <section className="col-span-3">
             <h3>DỊCH VỤ NỔI BẬT</h3>
 
             <ul>
               <li>
-                <Link to=''>Phun xăm chân mày</Link>
+                <Link to="">Phun xăm chân mày</Link>
               </li>
               <li>
-                <Link to=''>Điêu khắc chân mày</Link>
+                <Link to="">Điêu khắc chân mày</Link>
               </li>
               <li>
-                <Link to=''>Phun và cấy môi</Link>
+                <Link to="">Phun và cấy môi</Link>
               </li>
               <li>
-                <Link to=''>JUV - Beauty</Link>
+                <Link to="">JUV - Beauty</Link>
               </li>
               <li>
-                <Link to=''>Tắm trắng</Link>
+                <Link to="">Tắm trắng</Link>
               </li>
               <li>
-                <Link to=''>Triệt lông</Link>
+                <Link to="">Triệt lông</Link>
               </li>
             </ul>
           </section>
         </div>
 
-        <div className='mt-16 text-sm flex flex-col items-center'>
-          <p className='max-md:flex flex-col'>
-            <span className='text-center'>
+        <div className="mt-16 text-sm flex flex-col items-center">
+          <p className="max-md:flex flex-col">
+            <span className="text-center">
               2016 - 2024 CÔNG TY TNHH THẨM MỸ LINH ANH SAIGON - LINH ANH SAIGON
               AESTHETIC COMPANY LIMITED
             </span>
-            <span className='text-center max-md:mt-2'>
+            <span className="text-center max-md:mt-2">
               Số ĐKKD: 0317 532 839 Do sở KHĐT TP.HCM cấp ngày 22/10/2022
             </span>
           </p>
 
           <section
-            id={style['contact-information']}
-            className='flex mt-2 max-md:flex-col items-center'
+            id={style["contact-information"]}
+            className="flex mt-2 max-md:flex-col items-center"
           >
             <p>
               <span>Địa chỉ:</span>
