@@ -242,7 +242,7 @@ export default function Index() {
         variants={fadeInUp}
       >
         <div className="container">
-          <Title>CUTTING-EDGE WORKPLACE - MODERN COMPANY CULTURE</Title>
+          <Title>NƠI LÀM VIỆC TIÊN TIẾN - VĂN HÓA CÔNG TY HIỆN ĐẠI</Title>
 
           <motion.div
             className="flex items-center xl:mt-20 max-lg:flex-wrap max-md:-mx-6 lg:-ml-8"
@@ -250,15 +250,15 @@ export default function Index() {
           >
             {[
               {
-                title: "AI-POWERED MATCHING",
+                title: "GHÉP ĐÔI BẰNG AI",
                 description:
-                  "Our advanced AI technology matches you with opportunities that align perfectly with your skills, experience, and career aspirations.",
+                  "Công nghệ AI tiên tiến của chúng tôi ghép đôi bạn với các cơ hội phù hợp hoàn hảo với kỹ năng, kinh nghiệm và khát vọng nghề nghiệp của bạn.",
                 image: "/images/ai-technology.png",
               },
               {
-                title: "FLEXIBLE WORK CULTURE",
+                title: "VĂN HÓA LÀM VIỆC LINH HOẠT",
                 description:
-                  "Embrace the future of work with remote-first opportunities, flexible schedules, and work-life balance that suits your lifestyle.",
+                  "Đón nhận tương lai của công việc với các cơ hội remote-first, lịch trình linh hoạt và cân bằng cuộc sống công việc phù hợp với lối sống của bạn.",
                 image: "/images/flexible-work.png",
               },
             ].map((item, i) => (
