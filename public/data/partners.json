@@ -1,32 +1,38 @@
 [
   {
-    "name": "Carat",
-    "logo": "/images/doi-tac/carat.png",
-    "link": "https://www.carat.com/"
+    "name": "Google",
+    "logo": "/images/partners/google.png"
   },
   {
-    "name": "INamed",
-    "logo": "/images/doi-tac/inamed.png",
-    "link": "https://inamed.com.vn/"
+    "name": "Microsoft",
+    "logo": "/images/partners/microsoft.png"
   },
   {
-    "name": "IPretty",
-    "logo": "/images/doi-tac/ipretty.png",
-    "link": "https://ipretty.vn/"
+    "name": "Amazon",
+    "logo": "/images/partners/amazon.png"
   },
   {
-    "name": "Minh Khuong",
-    "logo": "/images/doi-tac/minhkhuong.png",
-    "link": "https://minhkhuong.vn/"
+    "name": "Apple",
+    "logo": "/images/partners/apple.png"
   },
   {
-    "name": "Quantum Health Care",
-    "logo": "/images/doi-tac/quantumhealthcare.png",
-    "link": "https://quantumhealthcare.com/"
+    "name": "Meta",
+    "logo": "/images/partners/meta.png"
   },
   {
-    "name": "Sejung",
-    "logo": "/images/doi-tac/sejung.png",
-    "link": "https://sejung.vn/"
+    "name": "Tesla",
+    "logo": "/images/partners/tesla.png"
+  },
+  {
+    "name": "Netflix",
+    "logo": "/images/partners/netflix.png"
+  },
+  {
+    "name": "Spotify",
+    "logo": "/images/partners/spotify.png"
+  },
+  {
+    "name": "Uber",
+    "logo": "/images/partners/uber.png"
   }
 ]
