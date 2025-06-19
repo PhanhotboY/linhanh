@@ -32,7 +32,8 @@ section {
   --main-color: #dc2626;
   --main-gradient: linear-gradient(
     131.24deg,
-    #f87171 0%,
+    #fbbf24 0%,
+    #f87171 50%,
     var(--main-color) 100%
   );
   --sub1-color: #fbbf24;
