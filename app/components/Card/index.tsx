@@ -24,7 +24,7 @@ export default function Card({
     <motion.article
       className={`${style.card} ${
         isHighlight ? style.highlight : ""
-      } ${className} max-lg:w-[320px]`}
+      } ${className} max-lg:min-w-[280px] max-lg:max-w-[320px] max-lg:flex-shrink-0`}
       variants={scaleIn}
       initial="hidden"
       whileInView="visible"
