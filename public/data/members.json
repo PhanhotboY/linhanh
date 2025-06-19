@@ -1,122 +1,38 @@
 [
   {
-    "name": "Trần Thị Minh Diệu",
-    "label": "Kỹ thuật viên phun xăm",
-    "value": "tatoo-technician",
-    "image": "/images/teams/tran-thi-minh-dieu.png",
-    "descriptions": [
-      "Được đào tạo kiến thức phun xăm thẩm mỹ chuyên nghiệp",
-      "Có hơn 5 năm kinh nghiệm trong ngành Phun xăm thẩm mỹ"
-    ]
+    "name": "Sarah Chen",
+    "title": "Director of Talent Acquisition",
+    "image": "/images/team/sarah-chen.png",
+    "value": "tech-hiring"
   },
   {
-    "name": "Trần Thị Minh Diệu",
-    "label": "Kỹ thuật viên phun xăm",
-    "value": "tatoo-technician",
-    "image": "/images/teams/tran-thi-minh-dieu.png",
-    "descriptions": [
-      "Được đào tạo kiến thức phun xăm thẩm mỹ chuyên nghiệp",
-      "Có hơn 5 năm kinh nghiệm trong ngành Phun xăm thẩm mỹ"
-    ]
+    "name": "Michael Rodriguez",
+    "title": "Senior Technical Recruiter",
+    "image": "/images/team/michael-rodriguez.png",
+    "value": "tech-hiring"
   },
   {
-    "name": "Trần Thị Minh Diệu",
-    "label": "Kỹ thuật viên phun xăm",
-    "value": "tatoo-technician",
-    "image": "/images/teams/tran-thi-minh-dieu.png",
-    "descriptions": [
-      "Được đào tạo kiến thức phun xăm thẩm mỹ chuyên nghiệp",
-      "Có hơn 5 năm kinh nghiệm trong ngành Phun xăm thẩm mỹ"
-    ]
+    "name": "Emily Johnson",
+    "title": "Lead Healthcare Recruiter",
+    "image": "/images/team/emily-johnson.png",
+    "value": "healthcare-hiring"
   },
   {
-    "name": "Trần Thị Minh Diệu",
-    "label": "Kỹ thuật viên phun xăm",
-    "value": "tatoo-technician",
-    "image": "/images/teams/tran-thi-minh-dieu.png",
-    "descriptions": [
-      "Được đào tạo kiến thức phun xăm thẩm mỹ chuyên nghiệp",
-      "Có hơn 5 năm kinh nghiệm trong ngành Phun xăm thẩm mỹ"
-    ]
+    "name": "David Kim",
+    "title": "Finance & Business Recruiter",
+    "image": "/images/team/david-kim.png",
+    "value": "finance-hiring"
   },
   {
-    "name": "Trần Thị Minh Diệu",
-    "label": "Bác sĩ",
-    "value": "doctor",
-    "image": "/images/teams/le-hoang-ngoc-hanh.png",
-    "descriptions": [
-      "Được đào tạo kiến thức phun xăm thẩm mỹ chuyên nghiệp",
-      "Có hơn 5 năm kinh nghiệm trong ngành Phun xăm thẩm mỹ"
-    ]
+    "name": "Lisa Thompson",
+    "title": "Education Specialist",
+    "image": "/images/team/lisa-thompson.png",
+    "value": "education-hiring"
   },
   {
-    "name": "Trần Thị Minh Diệu",
-    "label": "Bác sĩ",
-    "value": "doctor",
-    "image": "/images/teams/le-hoang-ngoc-hanh.png",
-    "descriptions": [
-      "Được đào tạo kiến thức phun xăm thẩm mỹ chuyên nghiệp",
-      "Có hơn 5 năm kinh nghiệm trong ngành Phun xăm thẩm mỹ"
-    ]
-  },
-  {
-    "name": "Trần Thị Minh Diệu",
-    "label": "Bác sĩ",
-    "value": "doctor",
-    "image": "/images/teams/le-hoang-ngoc-hanh.png",
-    "descriptions": [
-      "Được đào tạo kiến thức phun xăm thẩm mỹ chuyên nghiệp",
-      "Có hơn 5 năm kinh nghiệm trong ngành Phun xăm thẩm mỹ"
-    ]
-  },
-  {
-    "name": "Trần Thị Minh Diệu",
-    "label": "Bác sĩ",
-    "value": "doctor",
-    "image": "/images/teams/le-hoang-ngoc-hanh.png",
-    "descriptions": [
-      "Được đào tạo kiến thức phun xăm thẩm mỹ chuyên nghiệp",
-      "Có hơn 5 năm kinh nghiệm trong ngành Phun xăm thẩm mỹ"
-    ]
-  },
-  {
-    "name": "Trần Thị Minh Diệu",
-    "label": "KTV Chăm sóc da",
-    "value": "skin-technician",
-    "image": "/images/teams/nguyen-thi-nhu-ngoc.png",
-    "descriptions": [
-      "Được đào tạo kiến thức phun xăm thẩm mỹ chuyên nghiệp",
-      "Có hơn 5 năm kinh nghiệm trong ngành Phun xăm thẩm mỹ"
-    ]
-  },
-  {
-    "name": "Trần Thị Minh Diệu",
-    "label": "KTV Chăm sóc da",
-    "value": "skin-technician",
-    "image": "/images/teams/nguyen-thi-nhu-ngoc.png",
-    "descriptions": [
-      "Được đào tạo kiến thức phun xăm thẩm mỹ chuyên nghiệp",
-      "Có hơn 5 năm kinh nghiệm trong ngành Phun xăm thẩm mỹ"
-    ]
-  },
-  {
-    "name": "Trần Thị Minh Diệu",
-    "label": "KTV Chăm sóc da",
-    "value": "skin-technician",
-    "image": "/images/teams/nguyen-thi-nhu-ngoc.png",
-    "descriptions": [
-      "Được đào tạo kiến thức phun xăm thẩm mỹ chuyên nghiệp",
-      "Có hơn 5 năm kinh nghiệm trong ngành Phun xăm thẩm mỹ"
-    ]
-  },
-  {
-    "name": "Trần Thị Minh Diệu",
-    "label": "KTV Chăm sóc da",
-    "value": "skin-technician",
-    "image": "/images/teams/nguyen-thi-nhu-ngoc.png",
-    "descriptions": [
-      "Được đào tạo kiến thức phun xăm thẩm mỹ chuyên nghiệp",
-      "Có hơn 5 năm kinh nghiệm trong ngành Phun xăm thẩm mỹ"
-    ]
+    "name": "Alex Morgan",
+    "title": "Marketing & Sales Recruiter",
+    "image": "/images/team/alex-morgan.png",
+    "value": "marketing-hiring"
   }
 ]
