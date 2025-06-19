@@ -13,7 +13,7 @@
 
   &.highlight::before {
     inset: 5px;
-    content: '';
+    content: "";
     z-index: -1;
     position: absolute;
     background: #fff;
@@ -23,9 +23,9 @@
   &.highlight {
     background: linear-gradient(
       180deg,
-      rgba(124, 93, 187, 1) 0%,
-      rgba(162, 134, 208, 1) 51%,
-      rgba(247, 243, 251, 1) 100%
+      rgba(220, 38, 38, 1) 0%,
+      rgba(248, 113, 113, 1) 51%,
+      rgba(254, 242, 242, 1) 100%
     );
   }
 
