@@ -175,10 +175,6 @@ h3 {
   .overlay {
     display: none;
   }
-
-  .container {
-    padding-inline: 30px;
-  }
 }
 
 @media (max-width: 1024px) {
