@@ -1,37 +1,37 @@
 [
   {
     "name": "Sarah Chen",
-    "title": "Director of Talent Acquisition",
+    "title": "Giám đốc Tuyển dụng Nhân tài",
     "image": "/images/team/sarah-chen.png",
     "value": "tech-hiring"
   },
   {
     "name": "Michael Rodriguez",
-    "title": "Senior Technical Recruiter",
+    "title": "Chuyên viên Tuyển dụng Kỹ thuật Cao cấp",
     "image": "/images/team/michael-rodriguez.png",
     "value": "tech-hiring"
   },
   {
     "name": "Emily Johnson",
-    "title": "Lead Healthcare Recruiter",
+    "title": "Trưởng phòng Tuyển dụng Y tế",
     "image": "/images/team/emily-johnson.png",
     "value": "healthcare-hiring"
   },
   {
     "name": "David Kim",
-    "title": "Finance & Business Recruiter",
+    "title": "Chuyên viên Tuyển dụng Tài chính & Kinh doanh",
     "image": "/images/team/david-kim.png",
     "value": "finance-hiring"
   },
   {
     "name": "Lisa Thompson",
-    "title": "Education Specialist",
+    "title": "Chuyên gia Giáo dục",
     "image": "/images/team/lisa-thompson.png",
     "value": "education-hiring"
   },
   {
     "name": "Alex Morgan",
-    "title": "Marketing & Sales Recruiter",
+    "title": "Chuyên viên Tuyển dụng Marketing & Bán hàng",
     "image": "/images/team/alex-morgan.png",
     "value": "marketing-hiring"
   }
