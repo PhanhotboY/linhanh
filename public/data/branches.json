@@ -1,80 +1,80 @@
 [
   {
-    "label": "North America",
+    "label": "Bắc Mỹ",
     "value": "north-america",
     "addresses": [
       {
         "isHighlight": true,
-        "address": "Tech Hub - San Francisco",
-        "district": "Silicon Valley, CA",
+        "address": "Trung tâm Công nghệ - San Francisco",
+        "district": "Thung lũng Silicon, CA",
         "map": "https://maps.google.com",
         "image": "/images/offices/san-francisco.png"
       },
       {
         "isHighlight": false,
-        "address": "Financial District - New York",
+        "address": "Khu tài chính - New York",
         "district": "Manhattan, NY",
         "map": "https://maps.google.com",
         "image": "/images/offices/new-york.png"
       },
       {
         "isHighlight": false,
-        "address": "Innovation Center - Seattle",
-        "district": "Downtown, WA",
+        "address": "Trung tâm Đổi mới - Seattle",
+        "district": "Trung tâm thành phố, WA",
         "map": "https://maps.google.com",
         "image": "/images/offices/seattle.png"
       }
     ]
   },
   {
-    "label": "Europe",
+    "label": "Châu Âu",
     "value": "europe",
     "addresses": [
       {
         "isHighlight": true,
-        "address": "European HQ - London",
-        "district": "Canary Wharf, UK",
+        "address": "Trụ sở châu Âu - London",
+        "district": "Canary Wharf, Vương quốc Anh",
         "map": "https://maps.google.com",
         "image": "/images/offices/london.png"
       },
       {
         "isHighlight": false,
-        "address": "Tech Campus - Berlin",
-        "district": "Mitte, Germany",
+        "address": "Khu công nghệ - Berlin",
+        "district": "Mitte, Đức",
         "map": "https://maps.google.com",
         "image": "/images/offices/berlin.png"
       },
       {
         "isHighlight": false,
-        "address": "Innovation Lab - Amsterdam",
-        "district": "Zuidas, Netherlands",
+        "address": "Phòng thí nghiệm Đổi mới - Amsterdam",
+        "district": "Zuidas, Hà Lan",
         "map": "https://maps.google.com",
         "image": "/images/offices/amsterdam.png"
       }
     ]
   },
   {
-    "label": "Asia Pacific",
+    "label": "Châu Á Thái Bình Dương",
     "value": "asia-pacific",
     "addresses": [
       {
         "isHighlight": true,
-        "address": "Regional Hub - Singapore",
+        "address": "Trung tâm khu vực - Singapore",
         "district": "Marina Bay, SG",
         "map": "https://maps.google.com",
         "image": "/images/offices/singapore.png"
       },
       {
         "isHighlight": false,
-        "address": "Tech Center - Tokyo",
-        "district": "Shibuya, Japan",
+        "address": "Trung tâm Công nghệ - Tokyo",
+        "district": "Shibuya, Nhật Bản",
         "map": "https://maps.google.com",
         "image": "/images/offices/tokyo.png"
       },
       {
         "isHighlight": false,
-        "address": "Development Center - Sydney",
-        "district": "CBD, Australia",
+        "address": "Trung tâm Phát triển - Sydney",
+        "district": "Trung tâm kinh doanh, Úc",
         "map": "https://maps.google.com",
         "image": "/images/offices/sydney.png"
       }
