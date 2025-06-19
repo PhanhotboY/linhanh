@@ -29,10 +29,10 @@ section {
   padding: 0;
   list-style: none;
 
-  --main-color: #422369;
+  --main-color: #dc2626;
   --main-gradient: linear-gradient(
     131.24deg,
-    #9f2af5 0%,
+    #f87171 0%,
     var(--main-color) 100%
   );
   --sub1-color: #bea865;
@@ -40,15 +40,15 @@ section {
   --sub3-color: #e0e0e0;
   --sub4-color: #fff;
 
-  --main-bg-color: #fbf9ff;
-  --sub1-bg-color: #f1effd;
+  --main-bg-color: #fef7f7;
+  --sub1-bg-color: #fdf2f2;
 
-  --main-text-color: #422369;
+  --main-text-color: #dc2626;
   --sub1-text-color: #fff;
-  --sub2-text-color: #e0d488;
+  --sub2-text-color: #fca5a5;
   --sub3-text-color: #4f4f4f;
 
-  --shadow-color: rgba(66, 35, 105, 0.28);
+  --shadow-color: rgba(220, 38, 38, 0.28);
   --sub1-gradient: linear-gradient(
     163.98deg,
     var(--sub2-color) -19.99%,
@@ -61,15 +61,15 @@ section {
   );
   --header-height: 96px;
 
-  --bg-wave: url('/images/wave.png');
-  --bg-wave-mobile: url('/images/wave-mobile.png');
+  --bg-wave: url("/images/wave.png");
+  --bg-wave-mobile: url("/images/wave-mobile.png");
 }
 
 .arrow {
   padding-top: 10px;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 0;
     height: 0;
