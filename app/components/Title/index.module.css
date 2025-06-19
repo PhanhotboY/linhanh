@@ -14,7 +14,7 @@
       height: 0.3rem;
       display: block;
       content: "";
-      background: #fecaca;
+      background: var(--sub1-gradient);
       margin-top: 5px;
       border-radius: 5px;
     }
