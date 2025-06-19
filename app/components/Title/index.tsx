@@ -1,4 +1,6 @@
-import style from './index.module.css';
+import { motion } from "framer-motion";
+import style from "./index.module.css";
+import { fadeInUp, staggerContainer, staggerItem } from "~/lib/animations";
 
 export default function Title({
   tabs,
@@ -15,22 +17,22 @@ export default function Title({
 }) {
   return (
     <div
-      className={`${style['title']} ${
-        className || ''
+      className={`${style["title"]} ${
+        className || ""
       } mb-10 max-lg:flex max-lg:flex-col w-full`}
     >
-      <h2 className='flex flex-col text-center max-lg:items-center'>
+      <h2 className="flex flex-col text-center max-lg:items-center">
         {children}
       </h2>
 
-      <div className='max-lg:overflow-scroll max-lg:w-full md:flex md:max-lg:justify-center'>
+      <div className="max-lg:overflow-scroll max-lg:w-full md:flex md:max-lg:justify-center">
         {tabs && (
-          <ul className='max-lg:mt-4 flex-nowrap w-max'>
+          <ul className="max-lg:mt-4 flex-nowrap w-max">
             {tabs.map((tab, i) => (
               <li key={i}>
                 <button
                   className={`${
-                    activeTab === tab.value ? style['active'] : ''
+                    activeTab === tab.value ? style["active"] : ""
                   } w-max`}
                   onClick={() =>
                     changeTabHandler && changeTabHandler(tab.value)
