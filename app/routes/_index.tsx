@@ -96,12 +96,12 @@ export const meta: MetaFunction = () => {
   return [
     {
       title:
-        "CareerHub - Connect With Your Dream Job | Professional Employment Platform",
+        "CareerHub - Kết nối với Công việc Mơ ước | Nền tảng Việc làm Chuyên nghiệp",
     },
     {
       name: "description",
       content:
-        "CareerHub is the leading professional employment platform connecting talented professionals with top companies worldwide. Discover opportunities in technology, healthcare, finance, and more. Build your career with expert guidance and personalized job matching.",
+        "CareerHub là nền tảng việc làm chuyên nghiệp hàng đầu kết nối các chuyên gia tài năng với các công ty hàng đầu trên toàn thế giới. Khám phá cơ hội trong công nghệ, y tế, tài chính và nhiều hơn nữa. Xây dựng sự nghiệp của bạn với hướng dẫn chuyên gia và ghép đôi công việc được cá nhân hóa.",
     },
   ];
 };
