@@ -138,7 +138,13 @@ export default function Index() {
         </Suspense>
       </section>
 
-      <section id="services">
+      <motion.section
+        id="services"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={staggerContainer}
+      >
         <div className="container">
           <Title
             tabs={getLabelValue(services)}
@@ -148,9 +154,11 @@ export default function Index() {
             CÁC DỊCH VỤ HOT
           </Title>
 
-          <PhunXamCards services={services} value={activeService} />
+          <motion.div variants={staggerItem}>
+            <PhunXamCards services={services} value={activeService} />
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       <section
         id="promotion"
