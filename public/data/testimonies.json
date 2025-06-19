@@ -1,47 +1,34 @@
 [
   {
-    "name": "Yeah1",
-    "image": "/images/magazine/yeah1.png",
-    "link": "https://yeah1.com/"
+    "name": "TechCrunch",
+    "image": "/images/media/techcrunch.png"
   },
   {
-    "name": "VNExpress",
-    "image": "/images/magazine/vnexpress.png",
-    "link": "https://vnexpress.net/"
+    "name": "Forbes",
+    "image": "/images/media/forbes.png"
   },
   {
-    "name": "AFamily",
-    "image": "/images/magazine/afamily.png",
-    "link": "https://afamaly.vn/"
+    "name": "Harvard Business Review",
+    "image": "/images/media/hbr.png"
   },
   {
-    "name": "Doi song phap luat",
-    "image": "/images/magazine/doi-song-va-phap-luat.png",
-    "link": "https://doisongphapluat.com.vn/"
+    "name": "Wall Street Journal",
+    "image": "/images/media/wsj.png"
   },
   {
-    "name": "Nguoi dua tin",
-    "image": "/images/magazine/nguoi-dua-tin.png",
-    "link": "https://nguoiduatin.vn/"
+    "name": "Bloomberg",
+    "image": "/images/media/bloomberg.png"
   },
   {
-    "name": "VietTimes",
-    "image": "/images/magazine/viettimes.png",
-    "link": "https://viettimes.vn/"
+    "name": "Financial Times",
+    "image": "/images/media/ft.png"
   },
   {
-    "name": "24h",
-    "image": "/images/magazine/24h.png",
-    "link": "https://24h.com.vn/"
+    "name": "Wired",
+    "image": "/images/media/wired.png"
   },
   {
-    "name": "Kenh14",
-    "image": "/images/magazine/kenh14.png",
-    "link": "https://kenh14.vn/"
-  },
-  {
-    "name": "Ngoi sao",
-    "image": "/images/magazine/ngoi-sao.png",
-    "link": "https://ngoisao.net/"
+    "name": "Fast Company",
+    "image": "/images/media/fastcompany.png"
   }
 ]
