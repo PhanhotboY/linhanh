@@ -4,6 +4,7 @@ import type { MetaFunction, LoaderFunctionArgs } from "@remix-run/node";
 import { lazy, Suspense, useState } from "react";
 import { RiMapPin2Fill } from "@remixicon/react";
 import { Image } from "@unpic/react";
+import { motion } from "framer-motion";
 
 import Title from "~/components/Title";
 import Card from "~/components/Card";
