@@ -95,12 +95,13 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
 export const meta: MetaFunction = () => {
   return [
     {
-      title: "Thẩm Mỹ Linh Anh - Thương Hiệu Làm Đẹp Uy Tín Số 1 Tại Việt Nam",
+      title:
+        "CareerHub - Connect With Your Dream Job | Professional Employment Platform",
     },
     {
       name: "description",
       content:
-        "Thẩm mỹ Quốc tế Linh Anh là thương hiệu chuyên cung cấp các dịch vụ làm đẹp công nghệ cao như: điều trị da, phun xăm thẩm mỹ, giảm béo,... và các dịch vụ tạo hình thẩm mỹ khác như: nâng mũi, căng da mặt, cắt mí, nâng cung chân mày,...",
+        "CareerHub is the leading professional employment platform connecting talented professionals with top companies worldwide. Discover opportunities in technology, healthcare, finance, and more. Build your career with expert guidance and personalized job matching.",
     },
   ];
 };
