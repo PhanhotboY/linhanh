@@ -160,19 +160,25 @@ export default function Index() {
         </div>
       </motion.section>
 
-      <section
+      <motion.section
         id="promotion"
         className="bg-wave bg-cover bg-top max-lg:pt-20"
         style={{
           paddingTop: "calc(var(--header-height) + 2rem)",
         }}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeInUp}
       >
         <div className="container">
           <Title>ĐẠI TIỆC KHUYẾN MÃI</Title>
 
-          <MasterDetail data={promotions} />
+          <motion.div variants={slideInFromBottom}>
+            <MasterDetail data={promotions} />
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       <section id="branch" className="py-8">
         <div className="container">
@@ -335,7 +341,7 @@ export default function Index() {
               <div className="col-span-5 flex items-center max-lg:mb-4 lg:pr-8 text-justify">
                 <p className="text-black text-lg">
                   Linh Anh tự hào là hệ thống thẩm mỹ hàng đầu được nhiều tờ báo
-                  uy tín nhắc đến như một sự công nhận về vị thế và tầm quan
+                  uy tín nhắc đến như một sự công nhận về vị thế và t��m quan
                   trọng của Linh Anh trong lĩnh vực thẩm mỹ.
                 </p>
               </div>
