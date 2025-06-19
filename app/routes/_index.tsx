@@ -535,7 +535,7 @@ const BranchCards = ({
   value: string;
 }) => {
   return (
-    <div className="wrapper max-lg:overflow-x-scroll max-lg:w-screen max-lg:-mt-8">
+    <div className="wrapper max-lg:overflow-x-scroll w-full max-lg:-mt-8">
       <div className="lg:grid grid-cols-10 gap-x-5 lg:gap-x-2 flex flex-nowrap max-lg:p-8">
         {branches
           .find((b) => b.value === value)
