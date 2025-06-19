@@ -1,38 +1,38 @@
 [
   {
-    "label": "Technology & IT",
+    "label": "Công Nghệ & CNTT",
     "image": "/images/services/technology.png",
     "value": "technology",
-    "description": "Discover exciting opportunities in software development, cybersecurity, data science, and emerging technologies. Join innovative companies that are shaping the digital future."
+    "description": "Khám phá những cơ hội thú vị trong phát triển phần mềm, an ninh mạng, khoa học dữ liệu và các công nghệ mới nổi. Tham gia các công ty đổi mới đang định hình tương lai số."
   },
   {
-    "label": "Healthcare & Medical",
+    "label": "Y Tế & Chăm Sóc Sức Khỏe",
     "image": "/images/services/healthcare.png",
     "value": "healthcare",
-    "description": "Make a difference in people's lives with rewarding careers in nursing, medicine, therapy, and healthcare administration. Build a meaningful career in this essential industry."
+    "description": "Tạo ra sự khác biệt trong cuộc sống mọi người với sự nghiệp bổ ích trong điều dưỡng, y học, trị liệu và quản lý chăm sóc sức khỏe. Xây dựng sự nghiệp ý nghĩa trong ngành thiết yếu này."
   },
   {
-    "label": "Business & Finance",
+    "label": "Kinh Doanh & Tài Chính",
     "image": "/images/services/finance.png",
     "value": "finance",
-    "description": "Excel in dynamic roles across accounting, financial planning, investment banking, and corporate strategy. Drive business growth and financial success."
+    "description": "Xuất sắc trong các vai trò năng động về kế toán, lập kế hoạch tài chính, ngân hàng đầu tư và chiến lược doanh nghiệp. Thúc đẩy tăng trưởng kinh doanh và thành công tài chính."
   },
   {
-    "label": "Education & Training",
+    "label": "Giáo Dục & Đào Tạo",
     "image": "/images/services/education.png",
     "value": "education",
-    "description": "Shape the next generation through teaching, curriculum development, educational technology, and academic administration. Inspire and educate future leaders."
+    "description": "Định hình thế hệ tiếp theo thông qua giảng dạy, phát triển chương trình giảng dạy, công nghệ giáo dục và quản lý học thuật. Truyền cảm hứng và giáo dục các nhà lãnh đạo tương lai."
   },
   {
-    "label": "Marketing & Sales",
+    "label": "Marketing & Bán Hàng",
     "image": "/images/services/marketing.png",
     "value": "marketing",
-    "description": "Build brands and drive revenue through creative marketing campaigns, sales strategies, digital marketing, and customer relationship management."
+    "description": "Xây dựng thương hiệu và thúc đẩy doanh thu thông qua các chiến dịch marketing sáng tạo, chiến lược bán hàng, marketing kỹ thuật số và quản lý quan hệ khách hàng."
   },
   {
-    "label": "Engineering & Manufacturing",
+    "label": "Kỹ Thuật & Sản Xuất",
     "image": "/images/services/engineering.png",
     "value": "engineering",
-    "description": "Design and build the future with opportunities in civil, mechanical, electrical engineering, and advanced manufacturing processes."
+    "description": "Thiết kế và xây dựng tương lai với các cơ hội trong kỹ thuật dân dụng, cơ khí, điện và quy trình sản xuất tiên tiến."
   }
 ]
