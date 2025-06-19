@@ -341,7 +341,7 @@ export default function Index() {
               <div className="col-span-5 flex items-center max-lg:mb-4 lg:pr-8 text-justify">
                 <p className="text-black text-lg">
                   Linh Anh tự hào là hệ thống thẩm mỹ hàng đầu được nhiều tờ báo
-                  uy tín nhắc đến như một sự công nhận về vị thế và t��m quan
+                  uy tín nhắc đến như một sự công nhận về vị thế và tầm quan
                   trọng của Linh Anh trong lĩnh vực thẩm mỹ.
                 </p>
               </div>
@@ -403,21 +403,32 @@ const PhunXamCards = ({
 }) => {
   return (
     <div className="wrapper max-lg:overflow-x-scroll max-lg:w-screen max-lg:-mt-8">
-      <div className="lg:grid grid-cols-12 gap-x-5 lg:gap-x-8 gap-y-8 flex flex-nowrap max-lg:p-8">
+      <motion.div
+        className="lg:grid grid-cols-12 gap-x-5 lg:gap-x-8 gap-y-8 flex flex-nowrap max-lg:p-8"
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+      >
         {services.map((s, i) =>
           s.value === value ? (
-            <Card
-              key={i}
+            <motion.div
+              key={`${s.value}-${i}`}
+              variants={staggerItem}
               className="col-span-2 lg:col-span-4"
-              title={s.label}
-              button="Tìm hiểu thêm"
-              image={s.image}
             >
-              <p>{s.description}</p>
-            </Card>
+              <Card
+                className=""
+                title={s.label}
+                button="Tìm hiểu thêm"
+                image={s.image}
+              >
+                <p>{s.description}</p>
+              </Card>
+            </motion.div>
           ) : null
         )}
-      </div>
+      </motion.div>
     </div>
   );
 };
