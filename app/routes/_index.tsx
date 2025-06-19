@@ -309,11 +309,21 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="kol" className="py-8">
+      <motion.section
+        id="featured-employers"
+        className="py-8"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeInUp}
+      >
         <div className="container">
-          <Title>SAO VIỆT ĐỒNG HÀNH CÙNG LINH ANH</Title>
+          <Title>FEATURED EMPLOYERS & INDUSTRY LEADERS</Title>
 
-          <div className="wrapper grid-cols-12 relative">
+          <motion.div
+            className="wrapper grid-cols-12 relative"
+            variants={staggerContainer}
+          >
             <div
               className="bg absolute inset-0 z-[-1]"
               style={{
@@ -322,40 +332,52 @@ export default function Index() {
               }}
             ></div>
 
-            <div className="flex flex-col items-center col-span-12 md:col-span-6 lg:pr-16">
+            <motion.div
+              className="flex flex-col items-center col-span-12 md:col-span-6 lg:pr-16"
+              variants={fadeInLeft}
+            >
               <Image
                 className="w-2/3"
-                src="/images/huong-giang.png"
-                alt=""
+                src="/images/ceo-featured.png"
+                alt="Featured CEO"
                 layout="fullWidth"
               />
 
               <p className="color-main text-lg p-4 text-justify flex-grow">
-                Hoa hậu Hương Giang - Biểu tượng của vẻ đẹp hiện đại và sự thông
-                thái - chính thức trở thành Đại sứ thương hiệu của Thẩm mỹ Quốc
-                tế Linh Anh, nối tiếp hành trình khai phóng nhan sắc.
+                Join thousands of professionals who have launched their careers
+                with top industry leaders. Our platform connects you directly
+                with hiring managers at Fortune 500 companies, innovative
+                startups, and industry pioneers who are shaping the future of
+                work.
               </p>
 
               <RiButton className="w-fit px-8 max-md:my-4 mx-auto" href="/">
-                Đọc thêm
+                Explore Employers
               </RiButton>
-            </div>
+            </motion.div>
 
-            <div className="col-span-12 md:col-span-6 max-md:flex max-md:flex-col-reverse max-lg:px-4">
-              <Image src="/images/girls.png" layout="fullWidth"></Image>
+            <motion.div
+              className="col-span-12 md:col-span-6 max-md:flex max-md:flex-col-reverse max-lg:px-4"
+              variants={fadeInRight}
+            >
+              <Image
+                src="/images/team-collaboration.png"
+                layout="fullWidth"
+                alt="Team Collaboration"
+              ></Image>
 
               <iframe
                 className="w-full rounded-xl aspect-video m-auto mt-4 max-md:mb-4"
-                src="https://www.youtube.com/embed/MwpMEbgC7DA?si=WPnLLnOuIbFyuEwr"
-                title="YouTube video player"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="CareerHub Success Stories"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
               ></iframe>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       <section id="customer" className="py-8">
         <div className="container">
@@ -579,7 +601,7 @@ const MemberCards = ({
                 Được đào tạo chuyên nghiệp trong lĩnh vực Chăm sóc da
               </p>
               <p className="rounded-xl p-2.5 mt-4 bg-sub1 text-black">
-                Hơn 4 năm kinh nghiệm Chăm sóc da thẩm mỹ tại bệnh viện Da liễu
+                Hơn 4 năm kinh nghiệm Chăm sóc da thẩm m�� tại bệnh viện Da liễu
               </p>
             </Card>
           ) : null
