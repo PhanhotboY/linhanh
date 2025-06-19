@@ -224,7 +224,7 @@ export default function Index() {
             activeTab={activeBranch}
             changeTabHandler={(tab) => setActiveBranch(tab)}
           >
-            CHI NHÁNH
+            GLOBAL OPPORTUNITIES
           </Title>
 
           <motion.div variants={slideInFromBottom}>
