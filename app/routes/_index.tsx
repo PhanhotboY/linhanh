@@ -11,6 +11,14 @@ import Card from "~/components/Card";
 import MasterDetail from "~/components/MasterDetail";
 import RiButton from "~/components/RiButton";
 import { getLabelValue } from "~/lib";
+import {
+  fadeInUp,
+  fadeInLeft,
+  fadeInRight,
+  staggerContainer,
+  staggerItem,
+  slideInFromBottom,
+} from "~/lib/animations";
 
 const Slider = lazy(() => import("~/components/Slider"));
 
