@@ -1,42 +1,42 @@
 [
   {
-    "title": "The Future of Remote Work: Trends and Opportunities in 2024",
-    "preview": "Explore how remote work is reshaping industries and creating new career opportunities. Learn about the skills needed to thrive in a distributed workforce and discover companies leading the remote-first movement.",
+    "title": "Tương lai của Làm việc từ xa: Xu hướng và Cơ hội năm 2024",
+    "preview": "Khám phá cách làm việc từ xa đang định hình lại các ngành công nghiệp và tạo ra những cơ hội nghề nghiệp mới. Tìm hiểu về các kỹ năng cần thiết để phát triển trong lực lượng lao động phân tán và khám phá các công ty dẫn đầu phong trào remote-first.",
     "image": "/images/blog/remote-work-future.png",
     "isMain": true,
-    "category": "Career Trends",
-    "readTime": "8 min read"
+    "category": "Xu hướng Nghề nghiệp",
+    "readTime": "8 phút đọc"
   },
   {
-    "title": "Mastering the Art of Salary Negotiation",
-    "preview": "Expert strategies for negotiating your worth and securing better compensation packages in today's competitive job market.",
+    "title": "Làm chủ Nghệ thuật Đàm phán Lương",
+    "preview": "Các chiến lược chuyên gia để đàm phán giá trị của bạn và đảm bảo gói lương tốt hơn trong thị trường việc làm cạnh tranh ngày nay.",
     "image": "/images/blog/salary-negotiation.png",
     "isMain": false,
-    "category": "Career Growth",
-    "readTime": "5 min read"
+    "category": "Phát triển Nghề nghiệp",
+    "readTime": "5 phút đọc"
   },
   {
-    "title": "Building Your Personal Brand in the Digital Age",
-    "preview": "How to leverage social media and professional networks to establish yourself as a thought leader in your industry.",
+    "title": "Xây dựng Thương hiệu Cá nhân trong Thời đại Số",
+    "preview": "Cách tận dụng mạng xã hội và mạng lưới chuyên nghiệp để thiết lập bản thân như một nhà tư tưởng lãnh đạo trong ngành của bạn.",
     "image": "/images/blog/personal-brand.png",
     "isMain": false,
-    "category": "Professional Development",
-    "readTime": "6 min read"
+    "category": "Phát triển Chuyên nghiệp",
+    "readTime": "6 phút đọc"
   },
   {
-    "title": "AI and Automation: Preparing for Tomorrow's Jobs",
-    "preview": "Understanding how artificial intelligence is changing the job landscape and which skills will remain in high demand.",
+    "title": "AI và Tự động hóa: Chuẩn bị cho Công việc của Ngày mai",
+    "preview": "Hiểu cách trí tuệ nhân tạo đang thay đổi bối cảnh việc làm và những kỹ năng nào sẽ tiếp tục có nhu cầu cao.",
     "image": "/images/blog/ai-jobs.png",
     "isMain": false,
-    "category": "Technology",
-    "readTime": "7 min read"
+    "category": "Công nghệ",
+    "readTime": "7 phút đọc"
   },
   {
-    "title": "The Rise of Green Jobs and Sustainable Careers",
-    "preview": "Discover emerging opportunities in sustainability, renewable energy, and environmental protection sectors.",
+    "title": "Sự trỗi dậy của Việc làm Xanh và Nghề nghiệp Bền vững",
+    "preview": "Khám phá các cơ hội mới nổi trong lĩnh vực bền vững, năng lượng tái tạo và bảo vệ môi trường.",
     "image": "/images/blog/green-jobs.png",
     "isMain": false,
-    "category": "Industry Insights",
-    "readTime": "4 min read"
+    "category": "Thông tin Ngành",
+    "readTime": "4 phút đọc"
   }
 ]
