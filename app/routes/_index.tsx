@@ -117,10 +117,12 @@ export default function Index() {
     partners,
   } = useLoaderData<typeof loader>();
 
-  const [activeService, setActiveService] = useState(services[0].value);
-  const [activeBranch, setActiveBranch] = useState(branches[0].value);
-  const [activeMember, setActiveMember] = useState(members[0].value);
-  const [activeCustomer, setActiveCustomer] = useState(customers[0].value);
+  const [activeService, setActiveService] = useState(services[0]?.value || "");
+  const [activeBranch, setActiveBranch] = useState(branches[0]?.value || "");
+  const [activeMember, setActiveMember] = useState(members[0]?.value || "");
+  const [activeCustomer, setActiveCustomer] = useState(
+    customers[0]?.value || ""
+  );
 
   return (
     <>
