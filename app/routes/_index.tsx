@@ -386,7 +386,7 @@ export default function Index() {
             activeTab={activeCustomer}
             changeTabHandler={(tab) => setActiveCustomer(tab)}
           >
-            HÌNH ẢNH THỰC TẾ CỦA KHÁCH HÀNG
+            CÂU CHUYỆN THÀNH CÔNG THỰC TẾ
           </Title>
 
           <CustomerCards customers={customers} value={activeCustomer} />
