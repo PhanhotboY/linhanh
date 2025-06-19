@@ -52,9 +52,16 @@
     button {
       text-transform: uppercase;
       padding: 4px 4px 8px;
+      transition: all 0.3s ease;
 
       &.active {
-        border-bottom: var(--main-color) 1px solid;
+        border-bottom: var(--sub1-color) 2px solid;
+        color: var(--sub2-color);
+        font-weight: 800;
+      }
+
+      &:hover:not(.active) {
+        color: var(--sub1-color);
       }
     }
   }
