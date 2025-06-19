@@ -181,7 +181,7 @@ export default function Index() {
             activeTab={activeService}
             changeTabHandler={(tab) => setActiveService(tab)}
           >
-            EXPLORE CAREER OPPORTUNITIES
+            KHÁM PHÁ CƠ HỘI NGHỀ NGHIỆP
           </Title>
 
           <motion.div variants={staggerItem}>
