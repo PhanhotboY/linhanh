@@ -1,44 +1,82 @@
-import { json } from '@remix-run/node';
-import { Link, useLoaderData } from '@remix-run/react';
-import type { MetaFunction, LoaderFunctionArgs } from '@remix-run/node';
-import { lazy, Suspense, useState } from 'react';
-import { RiMapPin2Fill } from '@remixicon/react';
-import { Image } from '@unpic/react';
+import { json } from "@remix-run/node";
+import { Link, useLoaderData } from "@remix-run/react";
+import type { MetaFunction, LoaderFunctionArgs } from "@remix-run/node";
+import { lazy, Suspense, useState } from "react";
+import { RiMapPin2Fill } from "@remixicon/react";
+import { Image } from "@unpic/react";
+import { motion } from "framer-motion";
+import * as fs from "fs/promises";
+import * as path from "path";
 
-import Title from '~/components/Title';
-import Card from '~/components/Card';
-import MasterDetail from '~/components/MasterDetail';
-import RiButton from '~/components/RiButton';
-import { getLabelValue } from '~/lib';
+import Title from "~/components/Title";
+import Card from "~/components/Card";
+import MasterDetail from "~/components/MasterDetail";
+import RiButton from "~/components/RiButton";
+import { getLabelValue } from "~/lib";
+import {
+  fadeInUp,
+  fadeInLeft,
+  fadeInRight,
+  staggerContainer,
+  staggerItem,
+  slideInFromBottom,
+} from "~/lib/animations";
 
-const Slider = lazy(() => import('~/components/Slider'));
+const Slider = lazy(() => import("~/components/Slider"));
 
 export const loader = async ({ request }: LoaderFunctionArgs) => {
-  // const url = new URL(request.url);
-  const branches = await fetch(request.url + 'data/branches.json').then((res) =>
-    res.json()
-  );
-  const services = await fetch(request.url + 'data/services.json').then((res) =>
-    res.json()
-  );
-  const promotions = await fetch(request.url + 'data/promotions.json').then(
-    (res) => res.json()
-  );
-  const members = await fetch(request.url + 'data/members.json').then((res) =>
-    res.json()
-  );
-  const customers = await fetch(request.url + 'data/customers.json').then(
-    (res) => res.json()
-  );
-  const blogs = await fetch(request.url + 'data/blogs.json').then((res) =>
-    res.json()
-  );
-  const testimonies = await fetch(request.url + 'data/testimonies.json').then(
-    (res) => res.json()
-  );
-  const partners = await fetch(request.url + 'data/partners.json').then((res) =>
-    res.json()
-  );
+  let branches,
+    services,
+    promotions,
+    members,
+    customers,
+    blogs,
+    testimonies,
+    partners;
+
+  try {
+    const dataPath = path.join(process.cwd(), "public", "data");
+
+    const [
+      branchesData,
+      servicesData,
+      promotionsData,
+      membersData,
+      customersData,
+      blogsData,
+      testimoniesData,
+      partnersData,
+    ] = await Promise.all([
+      fs.readFile(path.join(dataPath, "branches.json"), "utf-8"),
+      fs.readFile(path.join(dataPath, "services.json"), "utf-8"),
+      fs.readFile(path.join(dataPath, "promotions.json"), "utf-8"),
+      fs.readFile(path.join(dataPath, "members.json"), "utf-8"),
+      fs.readFile(path.join(dataPath, "customers.json"), "utf-8"),
+      fs.readFile(path.join(dataPath, "blogs.json"), "utf-8"),
+      fs.readFile(path.join(dataPath, "testimonies.json"), "utf-8"),
+      fs.readFile(path.join(dataPath, "partners.json"), "utf-8"),
+    ]);
+
+    branches = JSON.parse(branchesData);
+    services = JSON.parse(servicesData);
+    promotions = JSON.parse(promotionsData);
+    members = JSON.parse(membersData);
+    customers = JSON.parse(customersData);
+    blogs = JSON.parse(blogsData);
+    testimonies = JSON.parse(testimoniesData);
+    partners = JSON.parse(partnersData);
+  } catch (error) {
+    console.error("Error loading data files:", error);
+    // Return empty arrays as fallback
+    branches = [];
+    services = [];
+    promotions = [];
+    members = [];
+    customers = [];
+    blogs = [];
+    testimonies = [];
+    partners = [];
+  }
 
   // console.log('url from home: ', url);
 
@@ -57,12 +95,13 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
 export const meta: MetaFunction = () => {
   return [
     {
-      title: 'Thẩm Mỹ Linh Anh - Thương Hiệu Làm Đẹp Uy Tín Số 1 Tại Việt Nam',
+      title:
+        "CareerHub - Kết nối với Công việc Mơ ước | Nền tảng Việc làm Chuyên nghiệp",
     },
     {
-      name: 'description',
+      name: "description",
       content:
-        'Thẩm mỹ Quốc tế Linh Anh là thương hiệu chuyên cung cấp các dịch vụ làm đẹp công nghệ cao như: điều trị da, phun xăm thẩm mỹ, giảm béo,... và các dịch vụ tạo hình thẩm mỹ khác như: nâng mũi, căng da mặt, cắt mí, nâng cung chân mày,...',
+        "CareerHub là nền tảng việc làm chuyên nghiệp hàng đầu kết nối các chuyên gia tài năng với các công ty hàng đầu trên toàn thế giới. Khám phá cơ hội trong công nghệ, y tế, tài chính và nhiều hơn nữa. Xây dựng sự nghiệp của bạn với hướng dẫn chuyên gia và ghép đôi công việc được cá nhân hóa.",
     },
   ];
 };
@@ -79,46 +118,48 @@ export default function Index() {
     partners,
   } = useLoaderData<typeof loader>();
 
-  const [activeService, setActiveService] = useState(services[0].value);
-  const [activeBranch, setActiveBranch] = useState(branches[0].value);
-  const [activeMember, setActiveMember] = useState(members[0].value);
-  const [activeCustomer, setActiveCustomer] = useState(customers[0].value);
+  const [activeService, setActiveService] = useState(services[0]?.value || "");
+  const [activeBranch, setActiveBranch] = useState(branches[0]?.value || "");
+  const [activeMember, setActiveMember] = useState(members[0]?.value || "");
+  const [activeCustomer, setActiveCustomer] = useState(
+    customers[0]?.value || ""
+  );
 
   return (
     <>
-      <section id='slider'>
+      <section id="slider">
         <Suspense
           fallback={
-            <div className='h-80 font-3xl bold col-span-12'>
+            <div className="h-80 font-3xl bold col-span-12">
               Loading...............
             </div>
           }
         >
-          <div id='slider-wrapper' className='grid grid-cols-12 '>
+          <div id="slider-wrapper" className="grid grid-cols-12 ">
             <Slider
-              wrapper={'#slider-wrapper'}
-              className='hidden lg:block'
+              wrapper={"#slider-wrapper"}
+              className="hidden lg:block"
               images={[
-                '/images/slides/slide-1.png',
-                '/images/slides/slide-2.png',
-                '/images/slides/slide-3.png',
-                '/images/slides/slide-4.png',
-                '/images/slides/slide-5.png',
+                "/images/slides/slide-1.png",
+                "/images/slides/slide-2.png",
+                "/images/slides/slide-3.png",
+                "/images/slides/slide-4.png",
+                "/images/slides/slide-5.png",
               ]}
               // height={650}
               col={12}
             />
           </div>
 
-          <div id='mobile-slider-wrapper' className='grid grid-cols-12'>
+          <div id="mobile-slider-wrapper" className="grid grid-cols-12">
             <Slider
-              wrapper={'#mobile-slider-wrapper'}
-              className='block lg:hidden'
+              wrapper={"#mobile-slider-wrapper"}
+              className="block lg:hidden"
               images={[
-                '/images/slides/mobile/slide-1.png',
-                '/images/slides/mobile/slide-2.png',
-                '/images/slides/mobile/slide-3.png',
-                '/images/slides/mobile/slide-4.png',
+                "/images/slides/mobile/slide-1.png",
+                "/images/slides/mobile/slide-2.png",
+                "/images/slides/mobile/slide-3.png",
+                "/images/slides/mobile/slide-4.png",
               ]}
               // height={}
               col={12}
@@ -127,174 +168,242 @@ export default function Index() {
         </Suspense>
       </section>
 
-      <section id='services'>
-        <div className='container'>
+      <motion.section
+        id="services"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={staggerContainer}
+      >
+        <div className="container">
           <Title
             tabs={getLabelValue(services)}
             activeTab={activeService}
             changeTabHandler={(tab) => setActiveService(tab)}
           >
-            CÁC DỊCH VỤ HOT
+            KHÁM PHÁ CƠ HỘI NGHỀ NGHIỆP
           </Title>
 
-          <PhunXamCards services={services} value={activeService} />
+          <motion.div variants={staggerItem}>
+            <PhunXamCards services={services} value={activeService} />
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
-      <section
-        id='promotion'
-        className='bg-wave bg-cover bg-top max-lg:pt-20'
+      <motion.section
+        id="promotion"
+        className="bg-wave bg-cover bg-top max-lg:pt-20"
         style={{
-          paddingTop: 'calc(var(--header-height) + 2rem)',
+          paddingTop: "calc(var(--header-height) + 2rem)",
         }}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeInUp}
       >
-        <div className='container'>
-          <Title>ĐẠI TIỆC KHUYẾN MÃI</Title>
+        <div className="container">
+          <Title>CHƯƠNG TRÌNH THĂNG TIẾN NGHỀ NGHIỆP</Title>
 
-          <MasterDetail data={promotions} />
+          <motion.div variants={slideInFromBottom}>
+            <MasterDetail data={promotions} />
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
-      <section id='branch' className='py-8'>
-        <div className='container'>
+      <motion.section
+        id="branch"
+        className="py-8"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeInLeft}
+      >
+        <div className="container">
           <Title
             tabs={getLabelValue(branches)}
             activeTab={activeBranch}
             changeTabHandler={(tab) => setActiveBranch(tab)}
           >
-            CHI NHÁNH
+            CƠ HỘI TOÀN CẦU
           </Title>
 
-          <BranchCards branches={branches} value={activeBranch} />
+          <motion.div variants={slideInFromBottom}>
+            <BranchCards branches={branches} value={activeBranch} />
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
-      <section id='facilities' className='p-8'>
-        <div className='container'>
-          <Title>CÔNG NGHỆ TIÊN TIẾN - CƠ SỞ VẬT CHẤT HIỆN ĐẠI</Title>
+      <motion.section
+        id="culture"
+        className="p-8"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeInUp}
+      >
+        <div className="container">
+          <Title>NƠI LÀM VIỆC TIÊN TIẾN - VĂN HÓA CÔNG TY HIỆN ĐẠI</Title>
 
-          <div className='flex items-center xl:mt-20 max-lg:flex-wrap max-md:-mx-6 lg:-ml-8'>
-            {[1, 1].map((n, i) => (
-              <article
+          <motion.div
+            className="flex items-center xl:mt-20 max-lg:flex-wrap max-md:-mx-6 lg:-ml-8"
+            variants={staggerContainer}
+          >
+            {[
+              {
+                title: "GHÉP ĐÔI BẰNG AI",
+                description:
+                  "Công nghệ AI tiên tiến của chúng tôi ghép đôi bạn với các cơ hội phù hợp hoàn hảo với kỹ năng, kinh nghiệm và khát vọng nghề nghiệp của bạn.",
+                image: "/images/ai-technology.png",
+              },
+              {
+                title: "VĂN HÓA LÀM VIỆC LINH HOẠT",
+                description:
+                  "Đón nhận tương lai của công việc với các cơ hội remote-first, lịch trình linh hoạt và cân bằng cuộc sống công việc phù hợp với lối sống của bạn.",
+                image: "/images/flexible-work.png",
+              },
+            ].map((item, i) => (
+              <motion.article
                 key={i}
-                className='flex max-sm:flex-row-reverse rounded-xl relative h-fit max-xl:mb-8 lg:ml-8'
-                style={{ boxShadow: '1px 2px 10px 2px var(--shadow-color)' }}
+                className="flex max-sm:flex-row-reverse rounded-xl relative h-fit max-xl:mb-8 lg:ml-8"
+                style={{ boxShadow: "1px 2px 10px 2px var(--shadow-color)" }}
+                variants={staggerItem}
               >
-                <div className='flex flex-col w-1/2 xl:w-3/5 py-5 px-5 xl:px-8'>
-                  <h3 className='m-0'>CÔNG NGHỆ THẨM MỸ</h3>
+                <div className="flex flex-col w-1/2 xl:w-3/5 py-5 px-5 xl:px-8">
+                  <h3 className="m-0">{item.title}</h3>
 
-                  <p className='mt-2 mb-4 color-sub3 flex-grow'>
-                    Áp dụng công nghệ tiên tiến bậc nhất được chuyển giao từ các
-                    tập đoàn công nghệ thẩm mỹ hàng đầu thế giới.
+                  <p className="mt-2 mb-4 color-sub3 flex-grow">
+                    {item.description}
                   </p>
 
                   <RiButton
-                    className='w-2/3 max-md:w-max lg:max-xl:w-full max-sm:-ml-24 uppercase'
-                    href='/'
+                    className="w-2/3 max-md:w-max lg:max-xl:w-full max-sm:-ml-24 uppercase"
+                    href="/"
                   >
                     Tìm hiểu thêm
                   </RiButton>
                 </div>
 
                 <Image
-                  className='h-fit max-md:mt-8 xl:absolute w-1/2 xl:w-2/5 right-0 xl:-top-1/3'
-                  src='/images/cong-nghe-tham-my.png'
-                  alt=''
-                  layout='fullWidth'
+                  className="h-fit max-md:mt-8 xl:absolute w-1/2 xl:w-2/5 right-0 xl:-top-1/3"
+                  src={item.image}
+                  alt={item.title}
+                  layout="fullWidth"
                 />
-              </article>
+              </motion.article>
             ))}
-          </div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
-      <section id='members' className='bg-sub1'>
-        <div className='container py-14'>
+      <section id="members" className="bg-sub1">
+        <div className="container py-14">
           <Title
             tabs={getLabelValue(members)}
             activeTab={activeMember}
             changeTabHandler={(tab) => setActiveMember(tab)}
           >
-            ĐỘI NGŨ BÁC SĨ - KỸ THUẬT VIÊN
+            CỐ VẤN NGHỀ NGHIỆP CHUYÊN GIA
           </Title>
 
           <MemberCards members={members} value={activeMember} />
         </div>
       </section>
 
-      <section id='kol' className='py-8'>
-        <div className='container'>
-          <Title>SAO VIỆT ĐỒNG HÀNH CÙNG LINH ANH</Title>
+      <motion.section
+        id="featured-employers"
+        className="py-8"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeInUp}
+      >
+        <div className="container">
+          <Title>NHÀ TUYỂN DỤNG NỔI BẬT & CÁC NHÀ LÃNH ĐẠO NGÀNH</Title>
 
-          <div className='wrapper grid-cols-12 relative'>
+          <motion.div
+            className="wrapper grid-cols-12 relative"
+            variants={staggerContainer}
+          >
             <div
-              className='bg absolute inset-0 z-[-1]'
+              className="bg absolute inset-0 z-[-1]"
               style={{
                 background:
                   'url("/images/overlay.png") center center / cover no-repeat',
               }}
             ></div>
 
-            <div className='flex flex-col items-center col-span-12 md:col-span-6 lg:pr-16'>
+            <motion.div
+              className="flex flex-col items-center col-span-12 md:col-span-6 lg:pr-16"
+              variants={fadeInLeft}
+            >
               <Image
-                className='w-2/3'
-                src='/images/huong-giang.png'
-                alt=''
-                layout='fullWidth'
+                className="w-2/3"
+                src="/images/ceo-featured.png"
+                alt="CEO Nổi bật"
+                layout="fullWidth"
               />
 
-              <p className='color-main text-lg p-4 text-justify flex-grow'>
-                Hoa hậu Hương Giang - Biểu tượng của vẻ đẹp hiện đại và sự thông
-                thái - chính thức trở thành Đại sứ thương hiệu của Thẩm mỹ Quốc
-                tế Linh Anh, nối tiếp hành trình khai phóng nhan sắc.
+              <p className="color-main text-lg p-4 text-justify flex-grow">
+                Tham gia cùng hàng nghìn chuyên gia đã khởi nghiệp sự nghiệp với
+                các nhà lãnh đạo ngành hàng đầu. Nền tảng của chúng tôi kết nối
+                bạn trực tiếp với các nhà quản lý tuyển dụng tại các công ty
+                Fortune 500, startup đổi mới và những người tiên phong trong
+                ngành đang định hình tương lai của công việc.
               </p>
 
-              <RiButton className='w-fit px-8 max-md:my-4 mx-auto' href='/'>
-                Đọc thêm
+              <RiButton className="w-fit px-8 max-md:my-4 mx-auto" href="/">
+                Khám phá Nhà tuyển dụng
               </RiButton>
-            </div>
+            </motion.div>
 
-            <div className='col-span-12 md:col-span-6 max-md:flex max-md:flex-col-reverse max-lg:px-4'>
-              <Image src='/images/girls.png' layout='fullWidth'></Image>
+            <motion.div
+              className="col-span-12 md:col-span-6 max-md:flex max-md:flex-col-reverse max-lg:px-4"
+              variants={fadeInRight}
+            >
+              <Image
+                src="/images/team-collaboration.png"
+                layout="fullWidth"
+                alt="Team Collaboration"
+              ></Image>
 
               <iframe
-                className='w-full rounded-xl aspect-video m-auto mt-4 max-md:mb-4'
-                src='https://www.youtube.com/embed/MwpMEbgC7DA?si=WPnLLnOuIbFyuEwr'
-                title='YouTube video player'
-                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                referrerPolicy='strict-origin-when-cross-origin'
+                className="w-full rounded-xl aspect-video m-auto mt-4 max-md:mb-4"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="CareerHub Success Stories"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
               ></iframe>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
-      <section id='customer' className='py-8'>
-        <div className='container'>
+      <section id="customer" className="py-8">
+        <div className="container">
           <Title
             tabs={getLabelValue(customers)}
             activeTab={activeCustomer}
             changeTabHandler={(tab) => setActiveCustomer(tab)}
           >
-            HÌNH ẢNH THỰC TẾ CỦA KHÁCH HÀNG
+            CÂU CHUYỆN THÀNH CÔNG THỰC TẾ
           </Title>
 
           <CustomerCards customers={customers} value={activeCustomer} />
 
-          <RiButton className='w-fit m-auto mt-10 px-8 uppercase' href='/'>
+          <RiButton className="w-fit m-auto mt-10 px-8 uppercase" href="/">
             Xem thêm
           </RiButton>
         </div>
       </section>
 
-      <section id='blog'>
-        <div className='container'>
+      <section id="blog">
+        <div className="container">
           <Title>KIẾN THỨC THẨM MỸ</Title>
 
           <Blogs blogs={blogs} />
 
-          <RiButton className='w-fit m-auto mt-10 px-8 uppercase' href='/'>
+          <RiButton className="w-fit m-auto mt-10 px-8 uppercase" href="/">
             Xem thêm
           </RiButton>
         </div>
@@ -306,31 +415,31 @@ export default function Index() {
             'url("/images/bg-gradient.png") center center / cover no-repeat',
         }}
       >
-        <section id='testimony' className='py-8'>
-          <div className='container'>
+        <section id="testimony" className="py-8">
+          <div className="container">
             <div>
               <Title>BÁO CHÍ NÓI VỀ LINH ANH</Title>
             </div>
 
-            <div className='grid grid-cols-12 max-lg:flex flex-col max-lg:px-4'>
-              <div className='col-span-5 flex items-center max-lg:mb-4 lg:pr-8 text-justify'>
-                <p className='text-black text-lg'>
+            <div className="grid grid-cols-12 max-lg:flex flex-col max-lg:px-4">
+              <div className="col-span-5 flex items-center max-lg:mb-4 lg:pr-8 text-justify">
+                <p className="text-black text-lg">
                   Linh Anh tự hào là hệ thống thẩm mỹ hàng đầu được nhiều tờ báo
                   uy tín nhắc đến như một sự công nhận về vị thế và tầm quan
                   trọng của Linh Anh trong lĩnh vực thẩm mỹ.
                 </p>
               </div>
 
-              <div className='col-span-7 grid grid-cols-12'>
+              <div className="col-span-7 grid grid-cols-12">
                 {testimonies.map((t: any, i: number) => (
                   <Image
                     src={t.image}
                     className={`${
-                      i < 3 ? 'md:-ml-4' : i >= 6 ? 'md:ml-4' : ''
+                      i < 3 ? "md:-ml-4" : i >= 6 ? "md:ml-4" : ""
                     } col-span-6 md:col-span-4 ${
-                      i === testimonies.length - 1 ? 'max-md:col-start-4' : ''
+                      i === testimonies.length - 1 ? "max-md:col-start-4" : ""
                     }`}
-                    layout='fullWidth'
+                    layout="fullWidth"
                     key={i}
                   ></Image>
                 ))}
@@ -339,18 +448,18 @@ export default function Index() {
           </div>
         </section>
 
-        <section id='partner' className='py-8'>
-          <div className='container'>
-            <h2 className='text-center text-2xl md:text-3xl color-main font-bold mb-8'>
+        <section id="partner" className="py-8">
+          <div className="container">
+            <h2 className="text-center text-2xl md:text-3xl color-main font-bold mb-8">
               ĐỐI TÁC CỦA LINH ANH
             </h2>
 
-            <div className='wrapper grid-cols-12 gap-8 grid-rows-2 px-4 md:px-16 gap-10'>
+            <div className="wrapper grid-cols-12 gap-8 grid-rows-2 px-4 md:px-16 gap-10">
               {partners.map((p: any, i: number) => (
                 <Image
-                  className='col-span-6 md:col-span-4'
+                  className="col-span-6 md:col-span-4"
                   src={p.logo}
-                  layout='fullWidth'
+                  layout="fullWidth"
                   key={i}
                   title={p.name}
                   alt={`Đối tác ${p.name}`}
@@ -377,22 +486,33 @@ const PhunXamCards = ({
   value: string;
 }) => {
   return (
-    <div className='wrapper max-lg:overflow-x-scroll max-lg:w-screen max-lg:-mt-8'>
-      <div className='lg:grid grid-cols-12 gap-x-5 lg:gap-x-8 gap-y-8 flex flex-nowrap max-lg:p-8'>
+    <div className="wrapper max-lg:overflow-x-scroll w-full max-lg:-mt-8">
+      <motion.div
+        className="lg:grid grid-cols-12 gap-x-5 lg:gap-x-8 gap-y-8 flex flex-nowrap max-lg:p-8"
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+      >
         {services.map((s, i) =>
           s.value === value ? (
-            <Card
-              key={i}
-              className='col-span-2 lg:col-span-4'
-              title={s.label}
-              button='Tìm hiểu thêm'
-              image={s.image}
+            <motion.div
+              key={`${s.value}-${i}`}
+              variants={staggerItem}
+              className="col-span-2 lg:col-span-4"
             >
-              <p>{s.description}</p>
-            </Card>
+              <Card
+                className=""
+                title={s.label}
+                button="Tìm hiểu thêm"
+                image={s.image}
+              >
+                <p>{s.description}</p>
+              </Card>
+            </motion.div>
           ) : null
         )}
-      </div>
+      </motion.div>
     </div>
   );
 };
@@ -415,37 +535,37 @@ const BranchCards = ({
   value: string;
 }) => {
   return (
-    <div className='wrapper max-lg:overflow-x-scroll max-lg:w-screen max-lg:-mt-8'>
-      <div className='lg:grid grid-cols-10 gap-x-5 lg:gap-x-2 flex flex-nowrap max-lg:p-8'>
+    <div className="wrapper max-lg:overflow-x-scroll w-full max-lg:-mt-8">
+      <div className="lg:grid grid-cols-10 gap-x-5 lg:gap-x-2 flex flex-nowrap max-lg:p-8">
         {branches
           .find((b) => b.value === value)
           ?.addresses.map((a, i) => (
             <Card
               key={i}
-              className='col-span-2'
+              className="col-span-2"
               image={a.image}
               isHighlight={a.isHighlight}
             >
               <p
-                className='text-base mt-4 font-bold'
-                style={{ color: 'var(--main-color)' }}
+                className="text-base mt-4 font-bold"
+                style={{ color: "var(--main-color)" }}
               >
                 {a.address}
               </p>
 
-              <p className='text-sm my-2'>{a.district}</p>
+              <p className="text-sm my-2">{a.district}</p>
 
               <a
-                className='text-xs font-bold underline flex justify-center'
+                className="text-xs font-bold underline flex justify-center"
                 href={a.map}
-                style={{ color: 'var(--main-color)' }}
-                target='_blank'
+                style={{ color: "var(--main-color)" }}
+                target="_blank"
               >
-                <RiMapPin2Fill className='mr-1' size={12} />
+                <RiMapPin2Fill className="mr-1" size={12} />
                 Nhấn xem chỉ đường
               </a>
 
-              <RiButton className='w-full text-sm p-2 mt-4 uppercase' href='/'>
+              <RiButton className="w-full text-sm p-2 mt-4 uppercase" href="/">
                 Đặt lịch hẹn
               </RiButton>
             </Card>
@@ -468,19 +588,19 @@ const MemberCards = ({
   value: string;
 }) => {
   return (
-    <div className='w-full max-lg:overflow-x-scroll'>
-      <div className='grid grid-cols-12 gap-5 max-lg:w-max max-lg:p-8'>
+    <div className="w-full max-lg:overflow-x-scroll">
+      <div className="grid grid-cols-12 gap-5 max-lg:w-max max-lg:p-8">
         {members.map((m, i) =>
           m.value === value ? (
-            <Card key={i} className='col-span-3 p-4' image={m.image}>
-              <h3 className='mt-4 uppercase font-bold'>{m.name}</h3>
+            <Card key={i} className="col-span-3 p-4" image={m.image}>
+              <h3 className="mt-4 uppercase font-bold">{m.name}</h3>
 
-              <h4 className='text-base font-bold color-main my-2'>{m.title}</h4>
+              <h4 className="text-base font-bold color-main my-2">{m.title}</h4>
 
-              <p className='rounded-xl p-2.5 mt-4 bg-sub1 text-black'>
+              <p className="rounded-xl p-2.5 mt-4 bg-sub1 text-black">
                 Được đào tạo chuyên nghiệp trong lĩnh vực Chăm sóc da
               </p>
-              <p className='rounded-xl p-2.5 mt-4 bg-sub1 text-black'>
+              <p className="rounded-xl p-2.5 mt-4 bg-sub1 text-black">
                 Hơn 4 năm kinh nghiệm Chăm sóc da thẩm mỹ tại bệnh viện Da liễu
               </p>
             </Card>
@@ -505,17 +625,17 @@ const CustomerCards = ({
   value: string;
 }) => {
   return (
-    <div className='w-full max-lg:overflow-x-scroll'>
-      <div className='flex flex-nowrap max-lg:w-max lg:grid grid-cols-12 gap-x-8 gap-y-10'>
+    <div className="w-full max-lg:overflow-x-scroll">
+      <div className="flex flex-nowrap max-lg:w-max lg:grid grid-cols-12 gap-x-8 gap-y-10">
         {customers.map((customer, i) =>
           customer.value === value ? (
             <Card
-              className='col-span-4 p-0 bg-main shadow-none'
+              className="col-span-4 p-0 bg-main shadow-none"
               image={customer.image}
               key={i}
               title={`${customer.name} (${customer.age} tuổi)`}
             >
-              <p className='text-black text-lg px-16'>{customer.description}</p>
+              <p className="text-black text-lg px-16">{customer.description}</p>
             </Card>
           ) : null
         )}
@@ -527,26 +647,26 @@ const CustomerCards = ({
 const Blogs = ({ blogs }: { blogs: Array<any> }) => {
   const mainBlog = blogs.find((b) => b.isMain);
   return (
-    <div className='grid grid-cols-12 gap-5 max-lg:px-4'>
-      <article className='col-span-12 lg:col-span-6 row-span-3 flex flex-col'>
-        <Link to='/'>
+    <div className="grid grid-cols-12 gap-5 max-lg:px-4">
+      <article className="col-span-12 lg:col-span-6 row-span-3 flex flex-col">
+        <Link to="/">
           <Image
-            className='rounded-xl'
+            className="rounded-xl"
             src={mainBlog.image}
-            layout='fullWidth'
+            layout="fullWidth"
             alt={mainBlog.title}
           ></Image>
 
-          <h3 className={'text-center'}>{mainBlog.title}</h3>
+          <h3 className={"text-center"}>{mainBlog.title}</h3>
 
-          <div className='divider'></div>
+          <div className="divider"></div>
 
           <p
-            className={'text-justify'}
+            className={"text-justify"}
             style={{
-              overflow: 'hidden',
-              display: '-webkit-box',
-              WebkitBoxOrient: 'vertical',
+              overflow: "hidden",
+              display: "-webkit-box",
+              WebkitBoxOrient: "vertical",
               WebkitLineClamp: 3,
             }}
           >
@@ -557,42 +677,42 @@ const Blogs = ({ blogs }: { blogs: Array<any> }) => {
 
       {blogs.map((b, i) =>
         !b.isMain ? (
-          <article key={i} className='col-span-12 lg:col-span-6 max-lg:mt-4'>
+          <article key={i} className="col-span-12 lg:col-span-6 max-lg:mt-4">
             <Link
-              className='block grid grid-cols-2 h-fit max-sm:flex flex-col'
-              to='/'
+              className="block grid grid-cols-2 h-fit max-sm:flex flex-col"
+              to="/"
             >
               <Image
-                className='rounded-xl col-span-1'
+                className="rounded-xl col-span-1"
                 src={b.image}
-                layout='fullWidth'
+                layout="fullWidth"
                 alt={b.title}
               ></Image>
 
-              <div className='col-span-1 ml-5 max-md:flex flex-col'>
+              <div className="col-span-1 ml-5 max-md:flex flex-col">
                 <h3
-                  className='m-0 text-lg max-md:mt-4'
+                  className="m-0 text-lg max-md:mt-4"
                   style={{
-                    overflow: 'hidden',
-                    display: '-webkit-box',
-                    WebkitBoxOrient: 'vertical',
+                    overflow: "hidden",
+                    display: "-webkit-box",
+                    WebkitBoxOrient: "vertical",
                     WebkitLineClamp: 2,
                   }}
                 >
                   {b.title}
                 </h3>
 
-                <div className='divider'></div>
+                <div className="divider"></div>
 
                 <p
-                  className={'text-ellipsis'}
+                  className={"text-ellipsis"}
                   style={{
-                    overflow: 'hidden',
-                    display: '-webkit-box',
-                    textOverflow: 'ellipsis',
-                    WebkitBoxOrient: 'vertical',
+                    overflow: "hidden",
+                    display: "-webkit-box",
+                    textOverflow: "ellipsis",
+                    WebkitBoxOrient: "vertical",
                     WebkitLineClamp: 2,
-                    wordWrap: 'break-word',
+                    wordWrap: "break-word",
                   }}
                 >
                   {b.preview}

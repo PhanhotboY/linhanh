@@ -1,202 +1,43 @@
 [
   {
-    "banner": "/images/promotions/dieu-tri-da.png",
-    "isHot": true,
-    "tab": "tab_dieu-tri-da",
-    "details": {
-      "alt": "Khuyến mãi Điều trị da",
-      "content": [
-        {
-          "title": "CẤY COLLAGEN TƯƠI",
-          "description": ["Giảm 30% cho lần đầu tiên"]
-        },
-        {
-          "title": "NÂNG MŨI",
-          "description": [
-            "Ưu đãi 65% khi đăng ký liệu trình",
-            "Tặng Voucher 1.000.000VNĐ"
-          ]
-        },
-        {
-          "title": "TRẺ HÓA DA",
-          "description": ["Giảm 30% cho lần đầu tiên"]
-        }
-      ],
-      "images": [
-        "/images/promotions/km-dieu-tri-da-1.png",
-        "/images/promotions/km-dieu-tri-da-2.png",
-        "/images/promotions/km-dieu-tri-da-3.png"
-      ]
-    }
+    "title": "Gói Nghề nghiệp Cao cấp",
+    "description": "Mở khóa các cơ hội việc làm độc quyền với thành viên cao cấp của chúng tôi",
+    "features": [
+      "Quyền ưu tiên tiếp cận các vị trí điều hành",
+      "Phiên coaching nghề nghiệp 1-1",
+      "Tối ưu hóa CV chuyên nghiệp",
+      "Hướng dẫn đàm phán lương",
+      "Thông tin chi tiết và xu hướng ngành",
+      "Lời mời tham gia sự kiện networking"
+    ],
+    "image": "/images/promotions/premium-package.png",
+    "isHot": true
   },
   {
-    "banner": "/images/promotions/phun-xam-dieu-khac.png",
-    "isHot": true,
-    "tab": "tab_phun-xam-dieu-khac",
-    "details": {
-      "alt": "Khuyến mãi Điều trị da",
-      "content": [
-        {
-          "title": "CẤY COLLAGEN TƯƠI",
-          "description": ["Giảm 30% cho lần đầu tiên"]
-        },
-        {
-          "title": "NÂNG MŨI",
-          "description": [
-            "Ưu đãi 65% khi đăng ký liệu trình",
-            "Tặng Voucher 1.000.000VNĐ"
-          ]
-        },
-        {
-          "title": "TRẺ HÓA DA",
-          "description": ["Giảm 30% cho lần đầu tiên"]
-        },
-        {
-          "title": "CẮT MÍ",
-          "description": ["Giảm 30% cho lần đầu tiên"]
-        }
-      ],
-      "images": [
-        "/images/promotions/km-dieu-tri-da-1.png",
-        "/images/promotions/km-dieu-tri-da-2.png",
-        "/images/promotions/km-dieu-tri-da-3.png"
-      ]
-    }
+    "title": "Đánh giá Nghề nghiệp Miễn phí",
+    "description": "Khám phá con đường sự nghiệp lý tưởng của b���n với đánh giá toàn diện của chúng tôi",
+    "features": [
+      "Phân tích tính cách và kỹ năng",
+      "Kiểm tra tương thích ngành nghề",
+      "Máy tính kỳ vọng lương",
+      "Lộ trình phát triển nghề nghiệp",
+      "Gợi ý việc làm được cá nhân hóa"
+    ],
+    "image": "/images/promotions/career-assessment.png",
+    "isHot": false
   },
   {
-    "banner": "/images/promotions/tre-hoa-da.png",
-    "isHot": true,
-    "tab": "tab_tre-hoa-da",
-    "details": {
-      "alt": "Khuyến mãi Điều trị da",
-      "content": [
-        {
-          "title": "CẤY COLLAGEN TƯƠI",
-          "description": ["Giảm 30% cho lần đầu tiên"]
-        },
-        {
-          "title": "NÂNG MŨI",
-          "description": [
-            "Ưu đãi 65% khi đăng ký liệu trình",
-            "Tặng Voucher 1.000.000VNĐ"
-          ]
-        },
-        {
-          "title": "TRẺ HÓA DA",
-          "description": ["Giảm 30% cho lần đầu tiên"]
-        },
-        {
-          "title": "CẮT MÍ",
-          "description": ["Giảm 30% cho lần đầu tiên"]
-        }
-      ],
-      "images": [
-        "/images/promotions/km-dieu-tri-da-1.png",
-        "/images/promotions/km-dieu-tri-da-2.png",
-        "/images/promotions/km-dieu-tri-da-3.png"
-      ]
-    }
-  },
-  {
-    "banner": "/images/promotions/cat-mi.png",
-    "isHot": true,
-    "tab": "tab_cat-mi",
-    "details": {
-      "alt": "Khuyến mãi Điều trị da",
-      "content": [
-        {
-          "title": "CẤY COLLAGEN TƯƠI",
-          "description": ["Giảm 30% cho lần đầu tiên"]
-        },
-        {
-          "title": "NÂNG MŨI",
-          "description": [
-            "Ưu đãi 65% khi đăng ký liệu trình",
-            "Tặng Voucher 1.000.000VNĐ"
-          ]
-        },
-        {
-          "title": "TRẺ HÓA DA",
-          "description": ["Giảm 30% cho lần đầu tiên"]
-        },
-        {
-          "title": "CẮT MÍ",
-          "description": ["Giảm 30% cho lần đầu tiên"]
-        }
-      ],
-      "images": [
-        "/images/promotions/km-dieu-tri-da-1.png",
-        "/images/promotions/km-dieu-tri-da-2.png",
-        "/images/promotions/km-dieu-tri-da-3.png"
-      ]
-    }
-  },
-  {
-    "banner": "/images/promotions/nang-mui.png",
-    "isHot": true,
-    "tab": "tab_nang-mui",
-    "details": {
-      "alt": "Khuyến mãi Điều trị da",
-      "content": [
-        {
-          "title": "CẤY COLLAGEN TƯƠI",
-          "description": ["Giảm 30% cho lần đầu tiên"]
-        },
-        {
-          "title": "NÂNG MŨI",
-          "description": [
-            "Ưu đãi 65% khi đăng ký liệu trình",
-            "Tặng Voucher 1.000.000VNĐ"
-          ]
-        },
-        {
-          "title": "TRẺ HÓA DA",
-          "description": ["Giảm 30% cho lần đầu tiên"]
-        },
-        {
-          "title": "CẮT MÍ",
-          "description": ["Giảm 30% cho lần đầu tiên"]
-        }
-      ],
-      "images": [
-        "/images/promotions/km-dieu-tri-da-1.png",
-        "/images/promotions/km-dieu-tri-da-2.png",
-        "/images/promotions/km-dieu-tri-da-3.png"
-      ]
-    }
-  },
-  {
-    "banner": "/images/promotions/nang-cung-chan-may.png",
-    "isHot": true,
-    "tab": "tab_nang-cung-chan-may",
-    "details": {
-      "alt": "Khuyến mãi Điều trị da",
-      "content": [
-        {
-          "title": "CẤY COLLAGEN TƯƠI",
-          "description": ["Giảm 30% cho lần đầu tiên"]
-        },
-        {
-          "title": "NÂNG MŨI",
-          "description": [
-            "Ưu đãi 65% khi đăng ký liệu trình",
-            "Tặng Voucher 1.000.000VNĐ"
-          ]
-        },
-        {
-          "title": "TRẺ HÓA DA",
-          "description": ["Giảm 30% cho lần đầu tiên"]
-        },
-        {
-          "title": "CẮT MÍ",
-          "description": ["Giảm 30% cho lần đầu tiên"]
-        }
-      ],
-      "images": [
-        "/images/promotions/km-dieu-tri-da-1.png",
-        "/images/promotions/km-dieu-tri-da-2.png",
-        "/images/promotions/km-dieu-tri-da-3.png"
-      ]
-    }
+    "title": "Chương trình Thành công Phỏng vấn",
+    "description": "Làm chủ quy trình phỏng vấn với hướng dẫn chuyên gia",
+    "features": [
+      "Phiên phỏng vấn thử",
+      "Chuẩn bị theo ngành cụ thể",
+      "Đào tạo câu hỏi hành vi",
+      "Đánh giá kỹ năng kỹ thuật",
+      "Workshop xây dựng tự tin",
+      "Chiến lược theo dõi"
+    ],
+    "image": "/images/promotions/interview-program.png",
+    "isHot": true
   }
 ]

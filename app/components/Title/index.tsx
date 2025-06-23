@@ -1,4 +1,6 @@
-import style from './index.module.css';
+import { motion } from "framer-motion";
+import style from "./index.module.css";
+import { fadeInUp, staggerContainer, staggerItem } from "~/lib/animations";
 
 export default function Title({
   tabs,
@@ -14,35 +16,50 @@ export default function Title({
   changeTabHandler?: (label: string) => void;
 }) {
   return (
-    <div
-      className={`${style['title']} ${
-        className || ''
+    <motion.div
+      className={`${style["title"]} ${
+        className || ""
       } mb-10 max-lg:flex max-lg:flex-col w-full`}
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
     >
-      <h2 className='flex flex-col text-center max-lg:items-center'>
+      <motion.h2
+        className="flex flex-col text-center max-lg:items-center"
+        variants={fadeInUp}
+      >
         {children}
-      </h2>
+      </motion.h2>
 
-      <div className='max-lg:overflow-scroll max-lg:w-full md:flex md:max-lg:justify-center'>
+      <motion.div
+        className="max-lg:overflow-scroll max-lg:w-full md:flex md:max-lg:justify-center"
+        variants={fadeInUp}
+      >
         {tabs && (
-          <ul className='max-lg:mt-4 flex-nowrap w-max'>
+          <motion.ul
+            className="max-lg:mt-4 flex-nowrap w-max"
+            variants={staggerContainer}
+          >
             {tabs.map((tab, i) => (
-              <li key={i}>
-                <button
+              <motion.li key={i} variants={staggerItem}>
+                <motion.button
                   className={`${
-                    activeTab === tab.value ? style['active'] : ''
+                    activeTab === tab.value ? style["active"] : ""
                   } w-max`}
                   onClick={() =>
                     changeTabHandler && changeTabHandler(tab.value)
                   }
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
                 >
                   {tab.label}
-                </button>
-              </li>
+                </motion.button>
+              </motion.li>
             ))}
-          </ul>
+          </motion.ul>
         )}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }

@@ -2,10 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 html,
 body {
   font-family: Roboto, sans-serif;
   background-color: var(--main-bg-color);
+  width: 100%;
+  overflow-x: hidden;
 
   &::-webkit-scrollbar {
     width: 10px;
@@ -21,7 +32,8 @@ main {
 }
 
 section {
-  width: inherit;
+  width: 100%;
+  max-width: 100vw;
 }
 
 * {
@@ -29,47 +41,44 @@ section {
   padding: 0;
   list-style: none;
 
-  --main-color: #422369;
+  --main-color: #dc2626;
   --main-gradient: linear-gradient(
     131.24deg,
-    #9f2af5 0%,
+    #fbbf24 0%,
+    #f87171 50%,
     var(--main-color) 100%
   );
-  --sub1-color: #bea865;
-  --sub2-color: #ff6400;
+  --sub1-color: #fbbf24;
+  --sub2-color: #eab308;
   --sub3-color: #e0e0e0;
   --sub4-color: #fff;
 
-  --main-bg-color: #fbf9ff;
-  --sub1-bg-color: #f1effd;
+  --main-bg-color: #fef7f7;
+  --sub1-bg-color: #fffbeb;
 
-  --main-text-color: #422369;
+  --main-text-color: #dc2626;
   --sub1-text-color: #fff;
-  --sub2-text-color: #e0d488;
+  --sub2-text-color: #fde047;
   --sub3-text-color: #4f4f4f;
 
-  --shadow-color: rgba(66, 35, 105, 0.28);
-  --sub1-gradient: linear-gradient(
-    163.98deg,
-    var(--sub2-color) -19.99%,
-    #fbad17 126.32%
-  );
+  --shadow-color: rgba(220, 38, 38, 0.28);
+  --sub1-gradient: linear-gradient(163.98deg, #fbbf24 -19.99%, #eab308 126.32%);
   --sub2-gradient: linear-gradient(
     90deg,
-    rgba(213, 196, 124, 1) 0%,
-    rgba(154, 117, 47, 1) 100%
+    rgba(251, 191, 36, 1) 0%,
+    rgba(234, 179, 8, 1) 100%
   );
   --header-height: 96px;
 
-  --bg-wave: url('/images/wave.png');
-  --bg-wave-mobile: url('/images/wave-mobile.png');
+  --bg-wave: url("/images/wave.png");
+  --bg-wave-mobile: url("/images/wave-mobile.png");
 }
 
 .arrow {
   padding-top: 10px;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 0;
     height: 0;
@@ -84,10 +93,27 @@ section {
 
 .container {
   margin: auto;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 768px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 @media (min-width: 1536px) {
   .container {
     max-width: 1320px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -157,10 +183,6 @@ h3 {
 
   .overlay {
     display: none;
-  }
-
-  .container {
-    padding-inline: 30px;
   }
 }
 
